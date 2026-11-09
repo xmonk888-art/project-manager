@@ -20,7 +20,7 @@
 ```text
 请从下方仓库的 skills/project-manager 目录
 安装 project-manager。
-https://github.com/xmonk888-art/xualab
+https://github.com/xmonk888-art/project-manager
 根据当前客户端和版本，核对个人技能目录。
 保留 SKILL.md、agents/openai.yaml、
 references/records-and-handoff.md 和 LICENSE。
@@ -29,9 +29,9 @@ references/records-and-handoff.md 和 LICENSE。
 版本和客户端识别结果。
 ```
 
-**WorkBuddy**　[下载单技能 ZIP](https://github.com/xmonk888-art/xualab/releases/download/project-manager-v1.0.1/project-manager-1.0.1.zip)，然后在「技能 → 添加技能 → 上传技能」导入。
+**WorkBuddy**　[下载单技能 ZIP](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.0.1/project-manager-1.0.1.zip)，然后在「技能 → 添加技能 → 上传技能」导入。
 
-[分客户端安装说明](../../docs/installation.md) · [版本说明](https://github.com/xmonk888-art/xualab/releases/tag/project-manager-v1.0.1)
+[分客户端安装说明](../../docs/installation.md) · [版本说明](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.0.1)
 
 ## 五步开始使用
 

@@ -4,7 +4,7 @@
 
 ## 获取单个技能
 
-[下载 project-manager 1.0.1 单技能 ZIP](https://github.com/xmonk888-art/xualab/releases/download/project-manager-v1.0.1/project-manager-1.0.1.zip) · [版本说明与附件](https://github.com/xmonk888-art/xualab/releases/tag/project-manager-v1.0.1)
+[下载 project-manager 1.0.1 单技能 ZIP](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.0.1/project-manager-1.0.1.zip) · [版本说明与附件](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.0.1)
 
 单技能附件只包含 project-manager 及其说明，不必安装整个总库。也可从仓库 `skills/project-manager/` 取得三个运行文件与 LICENSE。GitHub 的“Download ZIP”取得整个总库，WorkBuddy 请使用这里的单技能附件。
 
@@ -23,7 +23,7 @@ WorkBuddy 自定义包的官方入口是“技能 → 添加技能 → 上传技
 ### Codex
 
 ```text
-请从 https://github.com/xmonk888-art/xualab 的 skills/project-manager 目录，只安装 project-manager 到本机 Codex 可发现的个人技能目录。先核对当前版本的路径和已有同名安装；保留 SKILL.md、agents/openai.yaml、references/records-and-handoff.md 和 LICENSE，不覆盖已有自定义内容，不安装其他技能或依赖。完成后报告实际路径、版本和识别结果；需要新会话时说明。本轮只安装，不执行项目任务。
+请从 https://github.com/xmonk888-art/project-manager 的 skills/project-manager 目录，只安装 project-manager 到本机 Codex 可发现的个人技能目录。先核对当前版本的路径和已有同名安装；保留 SKILL.md、agents/openai.yaml、references/records-and-handoff.md 和 LICENSE，不覆盖已有自定义内容，不安装其他技能或依赖。完成后报告实际路径、版本和识别结果；需要新会话时说明。本轮只安装，不执行项目任务。
 ```
 
 当前官方文档列出的个人目录为 `~/.agents/skills/`，项目内为 `.agents/skills/`。已有配置或旧版路径先核对，不自动迁移或增加同名副本。可用 `$project-manager` 明确选择；宿主实际发现结果需要在目标机确认。
@@ -31,7 +31,7 @@ WorkBuddy 自定义包的官方入口是“技能 → 添加技能 → 上传技
 ### Claude Code
 
 ```text
-请从 https://github.com/xmonk888-art/xualab 的 skills/project-manager 目录，只安装 project-manager 到本机 Claude Code 的个人技能目录 ~/.claude/skills/project-manager/。先检查已有同名版本；保留 SKILL.md、agents/openai.yaml、references/records-and-handoff.md 和 LICENSE，不覆盖已有自定义内容，不安装其他技能或依赖。完成后报告路径、版本及 /project-manager 是否可发现；需要新会话时说明。本轮只安装，不执行项目任务。
+请从 https://github.com/xmonk888-art/project-manager 的 skills/project-manager 目录，只安装 project-manager 到本机 Claude Code 的个人技能目录 ~/.claude/skills/project-manager/。先检查已有同名版本；保留 SKILL.md、agents/openai.yaml、references/records-and-handoff.md 和 LICENSE，不覆盖已有自定义内容，不安装其他技能或依赖。完成后报告路径、版本及 /project-manager 是否可发现；需要新会话时说明。本轮只安装，不执行项目任务。
 ```
 
 个人技能使用 `~/.claude/skills/`，项目内使用 `.claude/skills/`。在实际 Claude Code 本地会话中确认 `/project-manager`；这不等同于 Cowork 或云会话的安装方式。

@@ -21,7 +21,7 @@ You do not need the whole library. Open the skill page, obtain its three runtime
 
 ```text
 Install project-manager from this GitHub repo:
-https://github.com/xmonk888-art/xualab
+https://github.com/xmonk888-art/project-manager
 Use the skills/project-manager directory.
 Confirm the personal skill path for this client
 and version. Preserve SKILL.md, agents/openai.yaml,
@@ -31,9 +31,9 @@ Install only. Report the path, version,
 and whether the client detects the skill.
 ```
 
-**WorkBuddy**　[Download the standalone ZIP](https://github.com/xmonk888-art/xualab/releases/download/project-manager-v1.0.1/project-manager-1.0.1.zip), then import it with **Skills → Add skill → Upload skill**.
+**WorkBuddy**　[Download the standalone ZIP](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.0.1/project-manager-1.0.1.zip), then import it with **Skills → Add skill → Upload skill**.
 
-[Setup by client (中文)](docs/installation.md) · [Release notes](https://github.com/xmonk888-art/xualab/releases/tag/project-manager-v1.0.1)
+[Setup by client (中文)](docs/installation.md) · [Release notes](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.0.1)
 
 ## Library, skill, and project
 
