@@ -5,6 +5,12 @@
 
 主助手根据当前可读取的对话和项目资料恢复工作，在授权范围内按需安排职责、调用已有专业技能、整合并检查成果。简单任务直接处理，复杂任务再组织团队。
 
+## 一轮工作如何衔接
+
+<p align="center"><a href="../../assets/overview/work-board.zh-CN.svg"><picture><source media="(max-width: 600px)" srcset="../../assets/overview/work-board.mobile.zh-CN.png"><img src="../../assets/overview/work-board.zh-CN.png" alt="项目任务看板：恢复项目、分工执行、检查交接" width="960"></picture></a></p>
+
+主助手负责整体目标与整合。共享文件或有状态软件会话设一个写入负责人，交接附成果位置和证据；修复后回查受影响部分。
+
 <a id="install"></a>
 
 ## 安装：先选客户端
@@ -63,12 +69,6 @@
 
 继续旧任务或换电脑时，使用[续作与交接指令](../../docs/usage.md)。
 
-## 一轮工作如何衔接
-
-<p align="center"><a href="../../assets/diagrams/workflow.zh-CN.svg"><picture><source media="(max-width: 600px)" srcset="../../assets/diagrams/workflow.mobile.zh-CN.png"><img src="../../assets/diagrams/workflow.zh-CN.png" alt="五步调度工作流程" width="960"></picture></a></p>
-
-主助手负责整体目标与整合。共享文件或有状态软件会话设一个写入负责人，交接附成果位置和证据；修复后回查受影响部分。
-
 <a id="case"></a>
 
 ## 实测：发现问题，并把证据补齐
@@ -77,7 +77,7 @@
 - 发现规范样张字重及参考稿字体问题，记录影响，保留原件待后续授权修订。
 - 独立复核发现报告缺少哈希绑定，补证并定向回查后关闭。
 
-<p align="center"><a href="../../assets/diagrams/case-vi.zh-CN.svg"><picture><source media="(max-width: 600px)" srcset="../../assets/diagrams/case-vi.mobile.zh-CN.png"><img src="../../assets/diagrams/case-vi.zh-CN.png" alt="既有只读协作实测摘要" width="960"></picture></a></p>
+<p align="center"><a href="../../assets/overview/review-evidence.zh-CN.svg"><picture><source media="(max-width: 600px)" srcset="../../assets/overview/review-evidence.mobile.zh-CN.png"><img src="../../assets/overview/review-evidence.zh-CN.png" alt="VI 只读实测：3 名子助手、13 页 PDF 复核、81 份原文件保持不变，补证后独立回查" width="960"></picture></a></p>
 
 图为维护者根据 2026-11-05 本机记录绘制的脱敏摘要，不是软件截图；原始客户资料不公开，未采集对照基线。
 

@@ -5,6 +5,12 @@
 
 The main assistant recovers work from readable context and project files, coordinates available specialist skills, and checks results within the authorized scope. Keep simple tasks simple; organize a team when useful.
 
+## How the work connects
+
+<p align="center"><a href="../../assets/overview/work-board.en.svg"><picture><source media="(max-width: 600px)" srcset="../../assets/overview/work-board.mobile.en.png"><img src="../../assets/overview/work-board.en.png" alt="Project task board: recover context, assign work, and check the handoff." width="960"></picture></a></p>
+
+The coordinator owns the goal and integration. Shared artifacts and stateful sessions have one writer. Handoffs identify outputs and evidence; permitted fixes are followed by affected-scope checks.
+
 <a id="install"></a>
 
 ## Install: choose your client
@@ -64,12 +70,6 @@ Expect actual deliverables, checks, and unresolved issues. Delegate only when th
 
 For continuation or another computer, see [handoff prompts (中文)](../../docs/usage.md).
 
-## How the work connects
-
-<p align="center"><a href="../../assets/diagrams/workflow.en.svg"><picture><source media="(max-width: 600px)" srcset="../../assets/diagrams/workflow.mobile.en.png"><img src="../../assets/diagrams/workflow.en.png" alt="Five-step task coordination workflow" width="960"></picture></a></p>
-
-The coordinator owns the goal and integration. Shared artifacts and stateful sessions have one writer. Handoffs identify outputs and evidence; permitted fixes are followed by affected-scope checks.
-
 <a id="case"></a>
 
 ## In practice: find issues and close an evidence gap
@@ -78,7 +78,7 @@ The coordinator owns the goal and integration. Shared artifacts and stateful ses
 - Identified font problems in the manual and reference artwork, leaving originals for a later authorized revision.
 - Supplemented a missing report hash binding and closed it through a targeted independent recheck.
 
-<p align="center"><a href="../../assets/diagrams/case-vi.en.svg"><picture><source media="(max-width: 600px)" srcset="../../assets/diagrams/case-vi.mobile.en.png"><img src="../../assets/diagrams/case-vi.en.png" alt="Existing read-only collaboration run summary" width="960"></picture></a></p>
+<p align="center"><a href="../../assets/overview/review-evidence.en.svg"><picture><source media="(max-width: 600px)" srcset="../../assets/overview/review-evidence.mobile.en.png"><img src="../../assets/overview/review-evidence.en.png" alt="Read-only VI case: 3 subagents, 13 PDF pages reviewed, 81 unchanged originals, and an independent recheck." width="960"></picture></a></p>
 
 Sanitized, maintainer-reported summary drawn from the 2026-11-05 local run, not a software screenshot. Client inputs remain private; no comparative baseline was collected.
 

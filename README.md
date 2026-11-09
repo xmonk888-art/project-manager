@@ -1,4 +1,4 @@
-<p align="center"><picture><source media="(max-width: 600px)" srcset="assets/brand/library.mobile.en.png"><img src="assets/brand/library.en.png" alt="xualab skill library: choose a skill and organize work" width="960"></picture></p>
+<p align="center"><a href="assets/overview/project-flow.en.svg"><picture><source media="(max-width: 600px)" srcset="assets/overview/project-flow.mobile.en.png"><img src="assets/overview/project-flow.en.png" alt="Intake, recover context, assign work, and review the handoff. Fill evidence gaps and recheck." width="960"></picture></a></p>
 
 <p align="center"><strong>Help your AI organize work like a small project team.</strong></p>
 <p align="center">English · <a href="README.zh-CN.md">简体中文</a> · <a href="#skills">Choose a skill</a> · <a href="#case">Real-run case</a> · <a href="docs/installation.md">Get and install (中文)</a></p>
@@ -35,7 +35,7 @@ The library expands when actual skills are added. The index does not advertise c
 
 In a read-only VI review, the team reconciled an outdated task record with later completed work, identified font issues in a manual and reference artwork, and closed a report-evidence gap after a targeted independent recheck. The original design files were unchanged.
 
-<p align="center"><a href="assets/diagrams/case-vi.en.svg"><picture><source media="(max-width: 600px)" srcset="assets/diagrams/case-vi.mobile.en.png"><img src="assets/diagrams/case-vi.en.png" alt="Existing VI review: three subagents, thirteen PDF pages, eighty-one unchanged originals and a closed report gap" width="960"></picture></a></p>
+<p align="center"><a href="assets/overview/review-evidence.en.svg"><picture><source media="(max-width: 600px)" srcset="assets/overview/review-evidence.mobile.en.png"><img src="assets/overview/review-evidence.en.png" alt="Read-only VI case: 3 subagents, 13 PDF pages reviewed, 81 unchanged originals, and an independent recheck." width="960"></picture></a></p>
 
 Sanitized, maintainer-reported summary drawn from local Windows/Codex records dated 2026-11-05; not a software screenshot. No comparative baseline was collected; client inputs remain private.
 

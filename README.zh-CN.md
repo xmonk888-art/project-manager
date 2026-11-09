@@ -1,4 +1,4 @@
-<p align="center"><picture><source media="(max-width: 600px)" srcset="assets/brand/library.mobile.zh-CN.png"><img src="assets/brand/library.zh-CN.png" alt="xualab 技能总库：选择技能，组织工作" width="960"></picture></p>
+<p align="center"><a href="assets/overview/project-flow.zh-CN.svg"><picture><source media="(max-width: 600px)" srcset="assets/overview/project-flow.mobile.zh-CN.png"><img src="assets/overview/project-flow.zh-CN.png" alt="接收项目、恢复状态、按需分工、验收交付，证据缺项时补齐并回查" width="960"></picture></a></p>
 
 <p align="center"><strong>让 AI 按小型项目团队的方式组织工作。</strong></p>
 <p align="center"><a href="README.md">English</a> · 简体中文 · <a href="#skills">选择技能</a> · <a href="#case">实测展示</a> · <a href="docs/installation.md">获取与安装</a></p>
@@ -35,7 +35,7 @@ Codex 与 Claude Code 提供一段话安装指令；WorkBuddy 自定义包通过
 
 在一次 VI 项目只读复核中，团队核对当前状态与实际文件，识别出旧待办与后续成功记录的冲突；发现规范样张和参考稿中的字体问题；并将一份报告的证据缺项补齐、独立回查关闭。设计原稿保持不变。
 
-<p align="center"><a href="assets/diagrams/case-vi.zh-CN.svg"><picture><source media="(max-width: 600px)" srcset="assets/diagrams/case-vi.mobile.zh-CN.png"><img src="assets/diagrams/case-vi.zh-CN.png" alt="既有VI只读实测：三名子助手、十三页PDF、八十一份原文件不变、报告补证回查关闭" width="960"></picture></a></p>
+<p align="center"><a href="assets/overview/review-evidence.zh-CN.svg"><picture><source media="(max-width: 600px)" srcset="assets/overview/review-evidence.mobile.zh-CN.png"><img src="assets/overview/review-evidence.zh-CN.png" alt="VI 只读实测：3 名子助手、13 页 PDF 复核、81 份原文件保持不变，补证后独立回查" width="960"></picture></a></p>
 
 图为维护者根据 2026-11-05 本机 Windows/Codex 记录绘制的脱敏摘要，不是软件截图；未采集对照基线，原始客户资料未公开。
 
