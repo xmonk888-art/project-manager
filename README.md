@@ -1,7 +1,7 @@
 <p align="center"><a href="assets/overview/project-flow.en.svg"><picture><source media="(max-width: 600px)" srcset="assets/overview/project-flow.mobile.en.png"><img src="assets/overview/project-flow.en.png" alt="Intake, recover context, assign work, and review the handoff. Fill evidence gaps and recheck." width="960"></picture></a></p>
 
 <p align="center"><strong>Help your AI organize work like a small project team.</strong></p>
-<p align="center">English · <a href="README.zh-CN.md">简体中文</a> · <a href="#skills">Choose a skill</a> · <a href="#case">Real-run case</a> · <a href="docs/installation.md">Get and install (中文)</a></p>
+<p align="center">English · <a href="README.zh-CN.md">简体中文</a> · <a href="#skills">Choose a skill</a> · <a href="#case">Real-run case</a> · <a href="#install">Get and install (中文)</a></p>
 
 xualab is a growing library of independently usable skills. Each skill has a clear job; combine capabilities only when a task needs them. The first skill is **project-manager**.
 
@@ -13,11 +13,27 @@ xualab is a growing library of independently usable skills. Each skill has a cle
 
 You do not need the whole library. Open the skill page, obtain its three runtime files, then place them in the actual project you want to work on.
 
+<a id="install"></a>
+
 ## Copy an install prompt
 
-One-paragraph setup prompts are provided for local Codex and Claude Code. WorkBuddy custom skills use its package-upload flow. [Standalone ZIP](https://github.com/xmonk888-art/xualab/releases/download/project-manager-v1.0.1/project-manager-1.0.1.zip) · [Release notes](https://github.com/xmonk888-art/xualab/releases/tag/project-manager-v1.0.1).
+**Codex / Claude Code**　Copy the whole block and paste it into a local client chat.
 
-[Client-specific setup guide (中文)](docs/installation.md)
+```text
+Install project-manager from this GitHub repo:
+https://github.com/xmonk888-art/xualab
+Use the skills/project-manager directory.
+Confirm the personal skill path for this client
+and version. Preserve SKILL.md, agents/openai.yaml,
+references/records-and-handoff.md, and LICENSE.
+Keep any existing customizations.
+Install only. Report the path, version,
+and whether the client detects the skill.
+```
+
+**WorkBuddy**　[Download the standalone ZIP](https://github.com/xmonk888-art/xualab/releases/download/project-manager-v1.0.1/project-manager-1.0.1.zip), then import it with **Skills → Add skill → Upload skill**.
+
+[Setup by client (中文)](docs/installation.md) · [Release notes](https://github.com/xmonk888-art/xualab/releases/tag/project-manager-v1.0.1)
 
 ## Library, skill, and project
 

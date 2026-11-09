@@ -13,11 +13,25 @@ The coordinator owns the goal and integration. Shared artifacts and stateful ses
 
 <a id="install"></a>
 
-## Install: choose your client
+## Copy an install prompt
 
-[Codex prompt](../../docs/installation.md) · [Claude Code prompt](../../docs/installation.md) · [WorkBuddy upload](../../docs/installation.md)
+**Codex / Claude Code**　Copy the whole block and paste it into a local client chat.
 
-[Download standalone ZIP](https://github.com/xmonk888-art/xualab/releases/download/project-manager-v1.0.1/project-manager-1.0.1.zip) · [Release notes](https://github.com/xmonk888-art/xualab/releases/tag/project-manager-v1.0.1). Other clients have documentation-based instructions, not installation tests.
+```text
+Install project-manager from this GitHub repo:
+https://github.com/xmonk888-art/xualab
+Use the skills/project-manager directory.
+Confirm the personal skill path for this client
+and version. Preserve SKILL.md, agents/openai.yaml,
+references/records-and-handoff.md, and LICENSE.
+Keep any existing customizations.
+Install only. Report the path, version,
+and whether the client detects the skill.
+```
+
+**WorkBuddy**　[Download the standalone ZIP](https://github.com/xmonk888-art/xualab/releases/download/project-manager-v1.0.1/project-manager-1.0.1.zip), then import it with **Skills → Add skill → Upload skill**.
+
+[Setup by client (中文)](../../docs/installation.md) · [Release notes](https://github.com/xmonk888-art/xualab/releases/tag/project-manager-v1.0.1)
 
 ## Start in five steps
 

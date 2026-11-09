@@ -1,7 +1,7 @@
 <p align="center"><a href="assets/overview/project-flow.zh-CN.svg"><picture><source media="(max-width: 600px)" srcset="assets/overview/project-flow.mobile.zh-CN.png"><img src="assets/overview/project-flow.zh-CN.png" alt="接收项目、恢复状态、按需分工、验收交付，证据缺项时补齐并回查" width="960"></picture></a></p>
 
 <p align="center"><strong>让 AI 按小型项目团队的方式组织工作。</strong></p>
-<p align="center"><a href="README.md">English</a> · 简体中文 · <a href="#skills">选择技能</a> · <a href="#case">实测展示</a> · <a href="docs/installation.md">获取与安装</a></p>
+<p align="center"><a href="README.md">English</a> · 简体中文 · <a href="#skills">选择技能</a> · <a href="#case">实测展示</a> · <a href="#install">获取与安装</a></p>
 
 xualab 是可逐步扩充的技能总库：每个技能负责一种清楚的工作，可独立取得，按任务需要组合使用。当前首个技能是 **project-manager**，用于项目管家。
 
@@ -13,11 +13,27 @@ xualab 是可逐步扩充的技能总库：每个技能负责一种清楚的工�
 
 不用先安装整个总库。进入技能页，按说明取得三个运行文件，再放到你真正要处理的业务项目中。
 
-## 复制安装话术
+<a id="install"></a>
 
-Codex 与 Claude Code 提供一段话安装指令；WorkBuddy 自定义包通过“上传技能”导入。[单技能 ZIP](https://github.com/xmonk888-art/xualab/releases/download/project-manager-v1.0.1/project-manager-1.0.1.zip) · [版本说明](https://github.com/xmonk888-art/xualab/releases/tag/project-manager-v1.0.1)。
+## 复制安装指令
 
-[打开三客户端安装说明](docs/installation.md)
+**Codex / Claude Code**　复制下面整段，粘贴到本机客户端的对话里。
+
+```text
+请从下方仓库的 skills/project-manager 目录
+安装 project-manager。
+https://github.com/xmonk888-art/xualab
+根据当前客户端和版本，核对个人技能目录。
+保留 SKILL.md、agents/openai.yaml、
+references/records-and-handoff.md 和 LICENSE。
+如有同名安装，保留现有自定义内容。
+本轮仅安装技能。完成后报告安装位置、
+版本和客户端识别结果。
+```
+
+**WorkBuddy**　[下载单技能 ZIP](https://github.com/xmonk888-art/xualab/releases/download/project-manager-v1.0.1/project-manager-1.0.1.zip)，然后在「技能 → 添加技能 → 上传技能」导入。
+
+[分客户端安装说明](docs/installation.md) · [版本说明](https://github.com/xmonk888-art/xualab/releases/tag/project-manager-v1.0.1)
 
 ## 总库、技能和项目，各放什么
 
