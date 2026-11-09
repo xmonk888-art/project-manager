@@ -15,7 +15,7 @@ xualab 是可逐步扩充的技能总库：每个技能负责一种清楚的工�
 
 ## 复制安装话术
 
-Codex 与 Claude Code 提供一段话安装指令；WorkBuddy 自定义包通过“上传技能”导入。[单技能 ZIP](https://github.com/xmonk888-art/xualab/releases/download/project-manager-v1.0.0/project-manager-1.0.0.zip) · [版本说明](https://github.com/xmonk888-art/xualab/releases/tag/project-manager-v1.0.0)。
+Codex 与 Claude Code 提供一段话安装指令；WorkBuddy 自定义包通过“上传技能”导入。[单技能 ZIP](https://github.com/xmonk888-art/xualab/releases/download/project-manager-v1.0.1/project-manager-1.0.1.zip) · [版本说明](https://github.com/xmonk888-art/xualab/releases/tag/project-manager-v1.0.1)。
 
 [打开三客户端安装说明](docs/installation.md)
 

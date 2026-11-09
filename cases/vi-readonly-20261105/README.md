@@ -10,7 +10,7 @@
 
 ## 实测速览
 
-<p align="center"><a href="../../assets/diagrams/case-vi.zh-CN.svg"><picture><source media="(max-width: 600px)" srcset="../../assets/diagrams/case-vi.mobile.zh-CN.png"><img src="../../assets/diagrams/case-vi.zh-CN.png" alt="VI 只读实测：三名子助手、十三页PDF、八十一份原文件不变和一次报告补证回查" width="960"></picture></a></p>
+<p align="center"><a href="../../assets/overview/review-evidence.zh-CN.svg"><picture><source media="(max-width: 600px)" srcset="../../assets/overview/review-evidence.mobile.zh-CN.png"><img src="../../assets/overview/review-evidence.zh-CN.png" alt="VI 只读实测：三名子助手、十三页PDF、八十一份原文件不变和一次报告补证回查" width="960"></picture></a></p>
 
 图为根据既有记录绘制的摘要，未使用客户素材或原软件截图。
 

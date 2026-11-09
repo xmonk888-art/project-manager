@@ -15,7 +15,7 @@ You do not need the whole library. Open the skill page, obtain its three runtime
 
 ## Copy an install prompt
 
-One-paragraph setup prompts are provided for local Codex and Claude Code. WorkBuddy custom skills use its package-upload flow. [Standalone ZIP](https://github.com/xmonk888-art/xualab/releases/download/project-manager-v1.0.0/project-manager-1.0.0.zip) · [Release notes](https://github.com/xmonk888-art/xualab/releases/tag/project-manager-v1.0.0).
+One-paragraph setup prompts are provided for local Codex and Claude Code. WorkBuddy custom skills use its package-upload flow. [Standalone ZIP](https://github.com/xmonk888-art/xualab/releases/download/project-manager-v1.0.1/project-manager-1.0.1.zip) · [Release notes](https://github.com/xmonk888-art/xualab/releases/tag/project-manager-v1.0.1).
 
 [Client-specific setup guide (中文)](docs/installation.md)
 

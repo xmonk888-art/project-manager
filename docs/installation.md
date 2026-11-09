@@ -4,7 +4,7 @@
 
 ## 获取单个技能
 
-[下载 project-manager 1.0.0 单技能 ZIP](https://github.com/xmonk888-art/xualab/releases/download/project-manager-v1.0.0/project-manager-1.0.0.zip) · [版本说明与附件](https://github.com/xmonk888-art/xualab/releases/tag/project-manager-v1.0.0)
+[下载 project-manager 1.0.1 单技能 ZIP](https://github.com/xmonk888-art/xualab/releases/download/project-manager-v1.0.1/project-manager-1.0.1.zip) · [版本说明与附件](https://github.com/xmonk888-art/xualab/releases/tag/project-manager-v1.0.1)
 
 单技能附件只包含 project-manager 及其说明，不必安装整个总库。也可从仓库 `skills/project-manager/` 取得三个运行文件与 LICENSE。GitHub 的“Download ZIP”取得整个总库，WorkBuddy 请使用这里的单技能附件。
 

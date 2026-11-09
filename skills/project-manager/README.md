@@ -17,7 +17,7 @@ The coordinator owns the goal and integration. Shared artifacts and stateful ses
 
 [Codex prompt](../../docs/installation.md) · [Claude Code prompt](../../docs/installation.md) · [WorkBuddy upload](../../docs/installation.md)
 
-[Download standalone ZIP](https://github.com/xmonk888-art/xualab/releases/download/project-manager-v1.0.0/project-manager-1.0.0.zip) · [Release notes](https://github.com/xmonk888-art/xualab/releases/tag/project-manager-v1.0.0). Other clients have documentation-based instructions, not installation tests.
+[Download standalone ZIP](https://github.com/xmonk888-art/xualab/releases/download/project-manager-v1.0.1/project-manager-1.0.1.zip) · [Release notes](https://github.com/xmonk888-art/xualab/releases/tag/project-manager-v1.0.1). Other clients have documentation-based instructions, not installation tests.
 
 ## Start in five steps
 
@@ -96,6 +96,6 @@ Specialist skills, tools, fonts, software, and credentials come from the target 
 
 ## Runtime and license
 
-Runtime version remains **1.0.0**. Only `SKILL.md`, `agents/openai.yaml`, and `references/records-and-handoff.md` are required; artwork and cases are reader documentation.
+Current release: **1.0.1**. Only `SKILL.md`, `agents/openai.yaml`, and `references/records-and-handoff.md` are required; artwork and cases are reader documentation.
 
 Licensed under MIT. Copyright (c) 2026 xmonk888-art. [MIT and scope](../../LICENSE-STATUS.md) · [Changelog](CHANGELOG.md) · [Portability (中文)](../../docs/portability.md)

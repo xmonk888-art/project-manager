@@ -17,7 +17,7 @@
 
 [Codex 一段话安装](../../docs/installation.md) · [Claude Code 一段话安装](../../docs/installation.md) · [WorkBuddy 上传包](../../docs/installation.md)
 
-[下载单技能 ZIP](https://github.com/xmonk888-art/xualab/releases/download/project-manager-v1.0.0/project-manager-1.0.0.zip) · [版本说明](https://github.com/xmonk888-art/xualab/releases/tag/project-manager-v1.0.0)。其他客户端仅核对了官方加载方式，尚未实装。
+[下载单技能 ZIP](https://github.com/xmonk888-art/xualab/releases/download/project-manager-v1.0.1/project-manager-1.0.1.zip) · [版本说明](https://github.com/xmonk888-art/xualab/releases/tag/project-manager-v1.0.1)。其他客户端仅核对了官方加载方式，尚未实装。
 
 ## 五步开始使用
 
@@ -95,6 +95,6 @@
 
 ## 运行文件与许可
 
-版本仍为 **1.0.0**。运行只需 `SKILL.md`、`agents/openai.yaml`、`references/records-and-handoff.md`，图和案例供人阅读。
+当前发布版本为 **1.0.1**。运行只需 `SKILL.md`、`agents/openai.yaml`、`references/records-and-handoff.md`，图和案例供人阅读。
 
 采用 MIT 许可证，版权署名为 xmonk888-art。[MIT 与许可范围](../../LICENSE-STATUS.md) · [版本记录](CHANGELOG.md) · [迁移说明](../../docs/portability.md)
