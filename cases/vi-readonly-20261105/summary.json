@@ -1,0 +1,38 @@
+{
+  "case_id": "vi-readonly-20261105",
+  "date": "2026-11-05",
+  "skill": "task-orchestrator",
+  "skill_version": "1.0.0",
+  "environment": "local Windows/Codex",
+  "evidence_type": "sanitized_maintainer_reported_real_run",
+  "public_reproducibility": "limited; private inputs and raw reports are not distributed",
+  "baseline_collected": false,
+  "scope": "Read-only review of original project files; new evidence and reports saved separately",
+  "metrics": {
+    "real_subagents": 3,
+    "employee_handoffs": 3,
+    "original_files_unchanged": 81,
+    "original_files_changed": 0,
+    "original_files_missing": 0,
+    "retained_hash_matches": "70/70",
+    "core_asset_hash_matches": "5/5",
+    "html_css_dependencies": "46/46",
+    "pdf_freshly_rendered_pages": 13,
+    "browser_scenarios": 4,
+    "browser_all_images_decoded": true,
+    "browser_horizontal_overflow": false
+  },
+  "report_feedback": "A missing input/screenshot hash binding was supplemented and closed after a targeted independent recheck",
+  "outcome": "Read-only coordination and handoff checks passed within the stated scope; design issues remain and production approval was not covered",
+  "not_tested": [
+    "second computer",
+    "other hosts or operating systems",
+    "native production-file editing and save/reopen",
+    "print or physical prototype",
+    "generation accounts",
+    "cross-session interruption recovery",
+    "offline long-running execution",
+    "comparative efficiency or pass-rate benchmark"
+  ],
+  "privacy": "No client names, artwork, screenshots, source files, local paths, account secrets, or complete business logs included"
+}

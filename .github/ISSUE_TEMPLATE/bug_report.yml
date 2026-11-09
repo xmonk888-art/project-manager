@@ -1,0 +1,36 @@
+name: 问题反馈
+description: 反馈可复现的技能行为或文档问题
+body:
+  - type: markdown
+    attributes:
+      value: 请使用脱敏的最小例子，不提交客户源稿、私有聊天、密钥或账号信息。
+  - type: input
+    id: skill-version
+    attributes:
+      label: 技能与版本
+      description: 例如 project-manager 1.0.0；文档问题可填写对应文件。
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 使用环境
+      description: 宿主名称、系统和已知版本；不清楚的项目可写未知。
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 最小复现步骤或指令
+      description: 说明任务范围、输入类型和实际操作，删除敏感内容。
+    validations:
+      required: true
+  - type: textarea
+    id: expected-actual
+    attributes:
+      label: 预期与实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 检查记录与影响
+      description: 可附脱敏日志或截图，并区分已执行与未验证部分。
