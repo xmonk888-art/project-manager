@@ -3,11 +3,13 @@
 <p align="center"><strong>让分工、专业技能和成果检查，围绕同一个目标衔接。</strong></p>
 <p align="center"><a href="README.md">English</a> · <a href="../../README.zh-CN.md">技能总库</a> · <a href="#install">安装</a> · <a href="#check">只读检查</a> · <a href="#execute">执行任务</a> · <a href="#case">实测</a></p>
 
-主助手根据当前可读取的对话和项目资料恢复工作，在授权范围内按需安排职责、调用已有专业技能、整合并检查成果。简单任务直接处理，复杂任务再组织团队。
+主助手先梳理目标、范围和当前版本。新项目提交分工、交付物与验收计划，等用户确认后再执行。已确认项目按原计划续作，范围实质变化时确认受影响部分。
+
+**1.1.0 新增计划确认。** [版本说明](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.1.0) · [对比 1.0.1](https://github.com/xmonk888-art/project-manager/compare/project-manager-v1.0.1...project-manager-v1.1.0)
 
 ## 一轮工作如何衔接
 
-<p align="center"><a href="../../assets/overview/work-board.zh-CN.svg"><picture><source media="(max-width: 600px)" srcset="../../assets/overview/work-board.mobile.zh-CN.png"><img src="../../assets/overview/work-board.zh-CN.png" alt="项目任务看板：恢复项目、分工执行、检查交接" width="960"></picture></a></p>
+<p align="center"><a href="../../assets/overview/work-board.zh-CN.svg"><picture><source media="(max-width: 600px)" srcset="../../assets/overview/work-board.mobile.zh-CN.png"><img src="../../assets/overview/work-board.zh-CN.png" alt="项目任务看板：恢复项目、提交计划并等待确认、执行与验收" width="960"></picture></a></p>
 
 主助手负责整体目标与整合。共享文件或有状态软件会话设一个写入负责人，交接附成果位置和证据；修复后回查受影响部分。
 
@@ -29,9 +31,9 @@ references/records-and-handoff.md 和 LICENSE。
 版本和客户端识别结果。
 ```
 
-**WorkBuddy**　[下载单技能 ZIP](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.0.1/project-manager-1.0.1.zip)，然后在「技能 → 添加技能 → 上传技能」导入。
+**WorkBuddy**　[下载单技能 ZIP](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.1.0/project-manager-1.1.0.zip)，然后在「技能 → 添加技能 → 上传技能」导入。
 
-[分客户端安装说明](../../docs/installation.md) · [版本说明](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.0.1)
+[分客户端安装说明](../../docs/installation.md) · [版本说明](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.1.0)
 
 ## 五步开始使用
 
@@ -70,10 +72,10 @@ references/records-and-handoff.md 和 LICENSE。
 
 ### B · 执行已授权任务
 
-先明确目标、交付物和允许修改范围。已有对话说清楚时可以直接使用；新项目请补充这些信息。
+新项目先明确目标、交付物和允许修改范围，提交计划并获得确认。以下指令适用于已有获批计划的项目。
 
 ```text
-使用 $project-manager，继续当前项目中已明确且已授权的任务。
+使用 $project-manager，沿用当前项目已确认的计划继续执行。
 先恢复状态，再按需分工、调用已有技能，完成成果检查后向我汇报。
 常规判断和授权范围内的修复自行推进；说明实际交付、检查结果和未解决项。
 遇到超出授权的必要动作，先完成可独立推进的部分，再说明具体影响。
@@ -109,6 +111,6 @@ references/records-and-handoff.md 和 LICENSE。
 
 ## 运行文件与许可
 
-当前发布版本为 **1.0.1**。运行只需 `SKILL.md`、`agents/openai.yaml`、`references/records-and-handoff.md`，图和案例供人阅读。
+当前发布版本为 **1.1.0**。运行只需 `SKILL.md`、`agents/openai.yaml`、`references/records-and-handoff.md`，图和案例供人阅读。
 
 采用 MIT 许可证，版权署名为 xmonk888-art。[MIT 与许可范围](../../LICENSE-STATUS.md) · [版本记录](CHANGELOG.md) · [迁移说明](../../docs/portability.md)

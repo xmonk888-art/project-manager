@@ -1,4 +1,4 @@
 interface:
   display_name: "项目管家"
-  short_description: "根据对话恢复项目，按需分配员工、调用已有技能并验收成果和跨电脑交接"
+  short_description: "梳理项目需求并提交计划，获确认后组织分工、执行、验收和续作交接"
   default_prompt: "使用 $project-manager，根据当前可读取对话和项目资料，按本次授权恢复状态、按需分工并调用现有技能，检查成果后向我汇报。"

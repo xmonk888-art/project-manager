@@ -1,4 +1,4 @@
-<p align="center"><a href="assets/overview/project-flow.zh-CN.svg"><picture><source media="(max-width: 600px)" srcset="assets/overview/project-flow.mobile.zh-CN.png"><img src="assets/overview/project-flow.zh-CN.png" alt="接收项目、恢复状态、按需分工、验收交付，证据缺项时补齐并回查" width="960"></picture></a></p>
+<p align="center"><a href="assets/overview/project-flow.zh-CN.svg"><picture><source media="(max-width: 600px)" srcset="assets/overview/project-flow.mobile.zh-CN.png"><img src="assets/overview/project-flow.zh-CN.png" alt="接收项目、提交计划、确认后分工执行并验收" width="960"></picture></a></p>
 
 <p align="center"><strong>让 AI 按小型项目团队的方式组织工作。</strong></p>
 <p align="center"><a href="README.md">English</a> · 简体中文 · <a href="#skills">选择技能</a> · <a href="#case">实测展示</a> · <a href="#install">获取与安装</a></p>
@@ -9,9 +9,11 @@ xualab 是可逐步扩充的技能总库：每个技能负责一种清楚的工�
 
 ## 选择一个技能开始
 
-<table><tr><td><h3><a href="skills/project-manager/README.zh-CN.md">project-manager · 项目管家</a></h3><p>接续复杂项目时，恢复目标与版本，按需组织职责和已有专业技能，检查成果后汇报。</p><p><a href="skills/project-manager/README.zh-CN.md#install">安装单个技能 →</a>　<a href="skills/project-manager/README.zh-CN.md#start">选择任务模式 →</a>　<a href="cases/vi-readonly-20261105/README.md">看一轮实测 →</a></p></td></tr></table>
+<table><tr><td><h3><a href="skills/project-manager/README.zh-CN.md">project-manager · 项目管家</a></h3><p>梳理需求并提交计划。经用户确认后分工执行、调用专业技能并验收。</p><p><a href="skills/project-manager/README.zh-CN.md#install">安装单个技能 →</a>　<a href="skills/project-manager/README.zh-CN.md#start">选择任务模式 →</a>　<a href="cases/vi-readonly-20261105/README.md">看一轮实测 →</a></p></td></tr></table>
 
 不用先安装整个总库。进入技能页，按说明取得三个运行文件，再放到你真正要处理的业务项目中。
+
+**1.1.0** 新项目先提交计划，确认后执行。续作沿用已确认计划。[版本区别](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.1.0) · [查看改动](https://github.com/xmonk888-art/project-manager/compare/project-manager-v1.0.1...project-manager-v1.1.0)
 
 <a id="install"></a>
 
@@ -31,9 +33,9 @@ references/records-and-handoff.md 和 LICENSE。
 版本和客户端识别结果。
 ```
 
-**WorkBuddy**　[下载单技能 ZIP](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.0.1/project-manager-1.0.1.zip)，然后在「技能 → 添加技能 → 上传技能」导入。
+**WorkBuddy**　[下载单技能 ZIP](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.1.0/project-manager-1.1.0.zip)，然后在「技能 → 添加技能 → 上传技能」导入。
 
-[分客户端安装说明](docs/installation.md) · [版本说明](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.0.1)
+[分客户端安装说明](docs/installation.md) · [版本说明](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.1.0)
 
 ## 总库、技能和项目，各放什么
 

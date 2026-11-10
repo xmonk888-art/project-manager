@@ -1,4 +1,4 @@
-<p align="center"><a href="assets/overview/project-flow.en.svg"><picture><source media="(max-width: 600px)" srcset="assets/overview/project-flow.mobile.en.png"><img src="assets/overview/project-flow.en.png" alt="Intake, recover context, assign work, and review the handoff. Fill evidence gaps and recheck." width="960"></picture></a></p>
+<p align="center"><a href="assets/overview/project-flow.en.svg"><picture><source media="(max-width: 600px)" srcset="assets/overview/project-flow.mobile.en.png"><img src="assets/overview/project-flow.en.png" alt="Intake, submit a plan for user approval, then execute and verify." width="960"></picture></a></p>
 
 <p align="center"><strong>Help your AI organize work like a small project team.</strong></p>
 <p align="center">English · <a href="README.zh-CN.md">简体中文</a> · <a href="#skills">Choose a skill</a> · <a href="#case">Real-run case</a> · <a href="#install">Get and install (中文)</a></p>
@@ -9,9 +9,11 @@ xualab is a growing library of independently usable skills. Each skill has a cle
 
 ## Choose a skill to start
 
-<table><tr><td><h3><a href="skills/project-manager/README.md">project-manager</a></h3><p>Recover a complex project's goal and current sources, coordinate available specialist capabilities, and review the outputs before reporting.</p><p><a href="skills/project-manager/README.md#install">Install this skill →</a>　<a href="skills/project-manager/README.md#start">Choose a task mode →</a>　<a href="cases/vi-readonly-20261105/README.md">See a real run (中文) →</a></p></td></tr></table>
+<table><tr><td><h3><a href="skills/project-manager/README.md">project-manager</a></h3><p>Clarify requirements and get the plan approved. Coordinate available specialist skills and verify the outputs.</p><p><a href="skills/project-manager/README.md#install">Install this skill →</a>　<a href="skills/project-manager/README.md#start">Choose a task mode →</a>　<a href="cases/vi-readonly-20261105/README.md">See a real run (中文) →</a></p></td></tr></table>
 
 You do not need the whole library. Open the skill page, obtain its three runtime files, then place them in the actual project you want to work on.
+
+**1.1.0** New projects require approval of the plan before execution. Follow the approved plan when resuming. [What changed](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.1.0) · [Compare versions](https://github.com/xmonk888-art/project-manager/compare/project-manager-v1.0.1...project-manager-v1.1.0)
 
 <a id="install"></a>
 
@@ -31,9 +33,9 @@ Install only. Report the path, version,
 and whether the client detects the skill.
 ```
 
-**WorkBuddy**　[Download the standalone ZIP](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.0.1/project-manager-1.0.1.zip), then import it with **Skills → Add skill → Upload skill**.
+**WorkBuddy**　[Download the standalone ZIP](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.1.0/project-manager-1.1.0.zip), then import it with **Skills → Add skill → Upload skill**.
 
-[Setup by client (中文)](docs/installation.md) · [Release notes](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.0.1)
+[Setup by client (中文)](docs/installation.md) · [Release notes](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.1.0)
 
 ## Library, skill, and project
 

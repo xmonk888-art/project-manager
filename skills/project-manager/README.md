@@ -3,11 +3,13 @@
 <p align="center"><strong>Connect responsibilities, specialist skills, and review around one goal.</strong></p>
 <p align="center"><a href="README.zh-CN.md">简体中文</a> · <a href="../../README.md">Skill library</a> · <a href="#install">Install</a> · <a href="#check">Read-only review</a> · <a href="#execute">Execute</a> · <a href="#case">Real run</a></p>
 
-The main assistant recovers work from readable context and project files, coordinates available specialist skills, and checks results within the authorized scope. Keep simple tasks simple; organize a team when useful.
+Clarify the goal, scope, and current inputs. For new work, submit a plan with roles, deliverables, and acceptance criteria for user approval. Resume approved work within the agreed scope and reconfirm material changes.
+
+**New in 1.1.0: plan approval.** [Release notes](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.1.0) · [Compare 1.0.1](https://github.com/xmonk888-art/project-manager/compare/project-manager-v1.0.1...project-manager-v1.1.0)
 
 ## How the work connects
 
-<p align="center"><a href="../../assets/overview/work-board.en.svg"><picture><source media="(max-width: 600px)" srcset="../../assets/overview/work-board.mobile.en.png"><img src="../../assets/overview/work-board.en.png" alt="Project task board: recover context, assign work, and check the handoff." width="960"></picture></a></p>
+<p align="center"><a href="../../assets/overview/work-board.en.svg"><picture><source media="(max-width: 600px)" srcset="../../assets/overview/work-board.mobile.en.png"><img src="../../assets/overview/work-board.en.png" alt="Project task board: recover context, submit a plan for approval, then execute and verify." width="960"></picture></a></p>
 
 The coordinator owns the goal and integration. Shared artifacts and stateful sessions have one writer. Handoffs identify outputs and evidence; permitted fixes are followed by affected-scope checks.
 
@@ -29,9 +31,9 @@ Install only. Report the path, version,
 and whether the client detects the skill.
 ```
 
-**WorkBuddy**　[Download the standalone ZIP](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.0.1/project-manager-1.0.1.zip), then import it with **Skills → Add skill → Upload skill**.
+**WorkBuddy**　[Download the standalone ZIP](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.1.0/project-manager-1.1.0.zip), then import it with **Skills → Add skill → Upload skill**.
 
-[Setup by client (中文)](../../docs/installation.md) · [Release notes](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.0.1)
+[Setup by client (中文)](../../docs/installation.md) · [Release notes](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.1.0)
 
 ## Start in five steps
 
@@ -70,10 +72,10 @@ Expect an assessment and recommendations, not claims that workers have executed 
 
 ### B · Execute authorized work
 
-Define the goal, deliverables, and permitted changes first. Reuse existing conversation when it already establishes them; supply them for a new project.
+For a new project, define the goal, deliverables, and scope, then get the plan approved. Use the prompt below to continue an approved plan.
 
 ```text
-Use $project-manager to continue this project's defined, authorized tasks.
+Use $project-manager to continue this project's approved plan.
 Recover current state, assign useful responsibilities, use available skills,
 and check the outputs. Handle routine decisions and permitted fixes.
 Report actual deliverables, evidence, and unresolved issues. If a necessary
@@ -110,6 +112,6 @@ Specialist skills, tools, fonts, software, and credentials come from the target 
 
 ## Runtime and license
 
-Current release: **1.0.1**. Only `SKILL.md`, `agents/openai.yaml`, and `references/records-and-handoff.md` are required; artwork and cases are reader documentation.
+Current release: **1.1.0**. Only `SKILL.md`, `agents/openai.yaml`, and `references/records-and-handoff.md` are required; artwork and cases are reader documentation.
 
 Licensed under MIT. Copyright (c) 2026 xmonk888-art. [MIT and scope](../../LICENSE-STATUS.md) · [Changelog](CHANGELOG.md) · [Portability (中文)](../../docs/portability.md)
