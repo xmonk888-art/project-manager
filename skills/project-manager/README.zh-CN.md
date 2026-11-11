@@ -1,17 +1,24 @@
 <p align="center"><picture><source media="(max-width: 600px)" srcset="../../assets/brand/project-manager.mobile.zh-CN.png"><img src="../../assets/brand/project-manager.zh-CN.png" alt="project-manager：恢复项目、调用技能、协作验收" width="960"></picture></p>
 
+<a id="latest-release"></a>
+
+> **最新版 · v1.2.0**
+>
+> 把已确认目标变成必要验收清单。检查失败后自动安排修复并复验，阶段汇报后继续推进；必要项全部通过才交付，真实阻塞时保留进度和恢复入口。
+>
+> [下载新版](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.2.0/project-manager-1.2.0.zip) · [完整更新说明](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.2.0)
+
 <p align="center"><strong>让分工、专业技能和成果检查，围绕同一个目标衔接。</strong></p>
 <p align="center"><a href="README.md">English</a> · <a href="../../README.zh-CN.md">技能总库</a> · <a href="#install">安装</a> · <a href="#check">只读检查</a> · <a href="#execute">执行任务</a> · <a href="#case">实测</a></p>
 
 主助手先梳理目标、范围和当前版本。新项目提交分工、交付物与验收计划，等用户确认后再执行。已确认项目按原计划续作，范围实质变化时确认受影响部分。
 
-**1.1.0 新增计划确认。** [版本说明](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.1.0) · [对比 1.0.1](https://github.com/xmonk888-art/project-manager/compare/project-manager-v1.0.1...project-manager-v1.1.0)
 
 ## 一轮工作如何衔接
 
 <p align="center"><a href="../../assets/overview/work-board.zh-CN.svg"><picture><source media="(max-width: 600px)" srcset="../../assets/overview/work-board.mobile.zh-CN.png"><img src="../../assets/overview/work-board.zh-CN.png" alt="项目任务看板：恢复项目、提交计划并等待确认、执行与验收" width="960"></picture></a></p>
 
-主助手负责整体目标与整合。共享文件或有状态软件会话设一个写入负责人，交接附成果位置和证据；修复后回查受影响部分。
+主助手负责整体目标与整合。共享文件或有状态软件会话设一个写入负责人。员工交接后由经理检查实际成果；不通过就修复并复验，必要验收通过后交付。真正阻塞时报告未完成项和恢复条件。
 
 <a id="install"></a>
 
@@ -31,9 +38,9 @@ references/records-and-handoff.md 和 LICENSE。
 版本和客户端识别结果。
 ```
 
-**WorkBuddy**　[下载单技能 ZIP](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.1.0/project-manager-1.1.0.zip)，然后在「技能 → 添加技能 → 上传技能」导入。
+**WorkBuddy**　[下载单技能 ZIP](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.2.0/project-manager-1.2.0.zip)，然后在「技能 → 添加技能 → 上传技能」导入。
 
-[分客户端安装说明](../../docs/installation.md) · [版本说明](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.1.0)
+[分客户端安装说明](../../docs/installation.md) · [版本说明](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.2.0)
 
 ## 五步开始使用
 
@@ -76,6 +83,8 @@ references/records-and-handoff.md 和 LICENSE。
 
 ```text
 使用 $project-manager，沿用当前项目已确认的计划继续执行。
+把目标列为必要验收清单，检查失败自动修复并复验。
+阶段汇报后继续，必要项通过才交付；真实阻塞时保存恢复入口。
 先恢复状态，再按需分工、调用已有技能，完成成果检查后向我汇报。
 常规判断和授权范围内的修复自行推进；说明实际交付、检查结果和未解决项。
 遇到超出授权的必要动作，先完成可独立推进的部分，再说明具体影响。
@@ -101,6 +110,8 @@ references/records-and-handoff.md 和 LICENSE。
 
 ## 当前能力状态
 
+**v1.2.0 验证边界：** 新规则已做格式、配置和文档场景检查，尚未用真实开发项目验证持续执行效果。
+
 | 范围 | 状态 |
 | --- | --- |
 | 本机 Windows/Codex，只读分工、技能调用、报告补证回查 | 已有真实实测 |
@@ -111,6 +122,6 @@ references/records-and-handoff.md 和 LICENSE。
 
 ## 运行文件与许可
 
-当前发布版本为 **1.1.0**。运行只需 `SKILL.md`、`agents/openai.yaml`、`references/records-and-handoff.md`，图和案例供人阅读。
+当前发布版本为 **1.2.0**。运行只需 `SKILL.md`、`agents/openai.yaml`、`references/records-and-handoff.md`，图和案例供人阅读。
 
 采用 MIT 许可证，版权署名为 xmonk888-art。[MIT 与许可范围](../../LICENSE-STATUS.md) · [版本记录](CHANGELOG.md) · [迁移说明](../../docs/portability.md)

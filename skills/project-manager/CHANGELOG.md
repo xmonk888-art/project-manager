@@ -1,5 +1,15 @@
 # project-manager 版本记录
 
+## 1.2.0 · 验收驱动的持续执行 / Acceptance-driven execution
+
+- 将已确认目标转成必要验收清单；可选改进单列，不自行降低标准。
+- 阶段汇报后继续推进，检查失败自动安排修复，修复后复验受影响范围。
+- 必要项通过、交付齐全才报告范围内完成；真实阻塞或暂停时保留恢复入口。
+- 同步中英文介绍、首屏版本摘要、流程配图、使用指令和单技能 ZIP。
+- 验证限于格式、配置、文件与文档场景；真实开发项目持续执行和桌面刷新尚未实测。
+
+Required acceptance checks now drive execution, repair assignments, and verification. Progress reports do not end approved work. Deliver when required checks pass; retain recovery state for genuine blockers. Bilingual docs, diagrams, and the standalone package are synchronized. Real development-project execution remains untested.
+
 ## 1.1.0 · 先确认计划，再执行
 
 - 新项目先沟通需求并提交计划。用户确认后开始派工、制作与验收。

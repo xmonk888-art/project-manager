@@ -2,11 +2,11 @@
 
 <a id="latest-release"></a>
 
-> **Latest version · v1.1.0**
+> **Latest version · v1.2.0**
 >
-> New projects start with a plan for approval. Approved projects resume within the agreed plan.
+> Turn the approved goal into required acceptance checks. Assign repairs after failed checks and verify the results again. Continue after progress reports; deliver when required checks pass, or record a genuine blocker and a recovery point.
 >
-> [Download the update](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.1.0/project-manager-1.1.0.zip) · [Full release notes](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.1.0)
+> [Download the update](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.2.0/project-manager-1.2.0.zip) · [Full release notes](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.2.0)
 
 <p align="center"><strong>Help your AI organize work like a small project team.</strong></p>
 <p align="center">English · <a href="README.zh-CN.md">简体中文</a> · <a href="#skills">Choose a skill</a> · <a href="#case">Real-run case</a> · <a href="#install">Get and install (中文)</a></p>
@@ -39,9 +39,9 @@ Install only. Report the path, version,
 and whether the client detects the skill.
 ```
 
-**WorkBuddy**　[Download the standalone ZIP](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.1.0/project-manager-1.1.0.zip), then import it with **Skills → Add skill → Upload skill**.
+**WorkBuddy**　[Download the standalone ZIP](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.2.0/project-manager-1.2.0.zip), then import it with **Skills → Add skill → Upload skill**.
 
-[Setup by client (中文)](docs/installation.md) · [Release notes](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.1.0)
+[Setup by client (中文)](docs/installation.md) · [Release notes](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.2.0)
 
 ## Library, skill, and project
 

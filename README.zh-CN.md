@@ -2,11 +2,11 @@
 
 <a id="latest-release"></a>
 
-> **最新版 · v1.1.0**
+> **最新版 · v1.2.0**
 >
-> 新项目先提交计划，等你确认后再分工执行。已确认的项目按原计划续作。
+> 把已确认目标变成必要验收清单。检查失败后自动安排修复并复验，阶段汇报后继续推进；必要项全部通过才交付，真实阻塞时保留进度和恢复入口。
 >
-> [下载新版](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.1.0/project-manager-1.1.0.zip) · [完整更新说明](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.1.0)
+> [下载新版](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.2.0/project-manager-1.2.0.zip) · [完整更新说明](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.2.0)
 
 <p align="center"><strong>让 AI 按小型项目团队的方式组织工作。</strong></p>
 <p align="center"><a href="README.md">English</a> · 简体中文 · <a href="#skills">选择技能</a> · <a href="#case">实测展示</a> · <a href="#install">获取与安装</a></p>
@@ -39,9 +39,9 @@ references/records-and-handoff.md 和 LICENSE。
 版本和客户端识别结果。
 ```
 
-**WorkBuddy**　[下载单技能 ZIP](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.1.0/project-manager-1.1.0.zip)，然后在「技能 → 添加技能 → 上传技能」导入。
+**WorkBuddy**　[下载单技能 ZIP](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.2.0/project-manager-1.2.0.zip)，然后在「技能 → 添加技能 → 上传技能」导入。
 
-[分客户端安装说明](docs/installation.md) · [版本说明](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.1.0)
+[分客户端安装说明](docs/installation.md) · [版本说明](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.2.0)
 
 ## 总库、技能和项目，各放什么
 

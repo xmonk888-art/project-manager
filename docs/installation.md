@@ -4,7 +4,7 @@
 
 ## 获取单个技能
 
-[下载 project-manager 1.1.0 单技能 ZIP](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.1.0/project-manager-1.1.0.zip) · [版本说明与附件](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.1.0)
+[下载 project-manager 1.2.0 单技能 ZIP](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.2.0/project-manager-1.2.0.zip) · [版本说明与附件](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.2.0)
 
 单技能附件只包含 project-manager 及其说明，不必安装整个总库。也可从仓库 `skills/project-manager/` 取得三个运行文件与 LICENSE。GitHub 的“Download ZIP”取得整个总库，WorkBuddy 请使用这里的单技能附件。
 
@@ -71,3 +71,7 @@ project-manager/
 - [WorkBuddy：技能、对话安装与上传技能](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)
 
 [返回总库](../README.zh-CN.md) · [技能说明](../skills/project-manager/README.zh-CN.md) · [使用排查](troubleshooting.md)
+
+## 更新已有安装
+
+升级前保留同名技能的自定义内容，再同步新版运行文件。已打开的对话请重新读取新版 SKILL.md；不能仅凭文件替换推断当前对话已加载新规则。

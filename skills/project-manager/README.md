@@ -1,17 +1,24 @@
 <p align="center"><picture><source media="(max-width: 600px)" srcset="../../assets/brand/project-manager.mobile.en.png"><img src="../../assets/brand/project-manager.en.png" alt="project-manager: recover context, coordinate skills and review work" width="960"></picture></p>
 
+<a id="latest-release"></a>
+
+> **Latest version · v1.2.0**
+>
+> Turn the approved goal into required acceptance checks. Assign repairs after failed checks and verify the results again. Continue after progress reports; deliver when required checks pass, or record a genuine blocker and a recovery point.
+>
+> [Download the update](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.2.0/project-manager-1.2.0.zip) · [Full release notes](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.2.0)
+
 <p align="center"><strong>Connect responsibilities, specialist skills, and review around one goal.</strong></p>
 <p align="center"><a href="README.zh-CN.md">简体中文</a> · <a href="../../README.md">Skill library</a> · <a href="#install">Install</a> · <a href="#check">Read-only review</a> · <a href="#execute">Execute</a> · <a href="#case">Real run</a></p>
 
 Clarify the goal, scope, and current inputs. For new work, submit a plan with roles, deliverables, and acceptance criteria for user approval. Resume approved work within the agreed scope and reconfirm material changes.
 
-**New in 1.1.0: plan approval.** [Release notes](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.1.0) · [Compare 1.0.1](https://github.com/xmonk888-art/project-manager/compare/project-manager-v1.0.1...project-manager-v1.1.0)
 
 ## How the work connects
 
 <p align="center"><a href="../../assets/overview/work-board.en.svg"><picture><source media="(max-width: 600px)" srcset="../../assets/overview/work-board.mobile.en.png"><img src="../../assets/overview/work-board.en.png" alt="Project task board: recover context, submit a plan for approval, then execute and verify." width="960"></picture></a></p>
 
-The coordinator owns the goal and integration. Shared artifacts and stateful sessions have one writer. Handoffs identify outputs and evidence; permitted fixes are followed by affected-scope checks.
+The coordinator owns the goal and integration. Shared artifacts and stateful sessions have one writer. Review actual outputs after each handoff; failed checks trigger repairs and affected-scope verification. Deliver when required checks pass, or report genuine blockers and recovery conditions.
 
 <a id="install"></a>
 
@@ -31,9 +38,9 @@ Install only. Report the path, version,
 and whether the client detects the skill.
 ```
 
-**WorkBuddy**　[Download the standalone ZIP](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.1.0/project-manager-1.1.0.zip), then import it with **Skills → Add skill → Upload skill**.
+**WorkBuddy**　[Download the standalone ZIP](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.2.0/project-manager-1.2.0.zip), then import it with **Skills → Add skill → Upload skill**.
 
-[Setup by client (中文)](../../docs/installation.md) · [Release notes](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.1.0)
+[Setup by client (中文)](../../docs/installation.md) · [Release notes](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.2.0)
 
 ## Start in five steps
 
@@ -76,6 +83,9 @@ For a new project, define the goal, deliverables, and scope, then get the plan a
 
 ```text
 Use $project-manager to continue this project's approved plan.
+Track required acceptance checks; repair failures and verify the results.
+Continue after progress updates. Deliver after required checks pass,
+or record a genuine blocker and a recovery point.
 Recover current state, assign useful responsibilities, use available skills,
 and check the outputs. Handle routine decisions and permitted fixes.
 Report actual deliverables, evidence, and unresolved issues. If a necessary
@@ -102,6 +112,8 @@ Sanitized, maintainer-reported summary drawn from the 2026-11-05 local run, not 
 
 ## Current capability status
 
+**v1.2.0 validation scope:** Format, configuration, and document scenarios checked; continued execution has not been tested on a real development project.
+
 | Scope | Status |
 | --- | --- |
 | Local Windows/Codex read-only delegation, skill use, and report recheck | Real-run evidence available |
@@ -112,6 +124,6 @@ Specialist skills, tools, fonts, software, and credentials come from the target 
 
 ## Runtime and license
 
-Current release: **1.1.0**. Only `SKILL.md`, `agents/openai.yaml`, and `references/records-and-handoff.md` are required; artwork and cases are reader documentation.
+Current release: **1.2.0**. Only `SKILL.md`, `agents/openai.yaml`, and `references/records-and-handoff.md` are required; artwork and cases are reader documentation.
 
 Licensed under MIT. Copyright (c) 2026 xmonk888-art. [MIT and scope](../../LICENSE-STATUS.md) · [Changelog](CHANGELOG.md) · [Portability (中文)](../../docs/portability.md)
