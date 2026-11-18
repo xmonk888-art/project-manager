@@ -1,77 +1,47 @@
-# 获取与安装：Codex、Claude Code、WorkBuddy
+# 安装项目管家 v1.3.0 / Install project-manager v1.3.0
 
-三种客户端的安装入口不同。此页依据官方文档整理；本技能现有真实实测仍为本机 Windows/Codex 只读协作，尚未在 Claude Code、WorkBuddy 或另一台电脑实际安装运行。
+[下载单技能 ZIP](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.3.0/project-manager-1.3.0.zip) · [完整更新说明](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.3.0) · [固定版本源码](https://github.com/xmonk888-art/project-manager/tree/project-manager-v1.3.0/skills/project-manager)
 
-## 获取单个技能
-
-[下载 project-manager 1.2.0 单技能 ZIP](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.2.0/project-manager-1.2.0.zip) · [版本说明与附件](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.2.0)
-
-单技能附件只包含 project-manager 及其说明，不必安装整个总库。也可从仓库 `skills/project-manager/` 取得三个运行文件与 LICENSE。GitHub 的“Download ZIP”取得整个总库，WorkBuddy 请使用这里的单技能附件。
-
-## 从单技能 ZIP 安装
-
-把提供的单技能 ZIP 交给支持文件访问的客户端，再发送：
+## Codex：复制一段话安装
 
 ```text
-请从我提供的本地 project-manager 单技能 ZIP 安装此技能。先识别当前客户端的官方安装方式：Codex/Claude Code 按实际发现目录处理；WorkBuddy 使用“添加技能 → 上传技能”，无法代操作时告诉我选择哪个包。保留三个运行文件和 LICENSE，检查同名安装，不覆盖自定义内容。完成后报告实际安装位置或导入结果、版本和识别状态；本轮只安装，不执行项目任务。
+请从 https://github.com/xmonk888-art/project-manager/tree/project-manager-v1.3.0/skills/project-manager 安装项目管家 project-manager v1.3.0。Codex 请使用 skill-installer；其他客户端先核对实际支持的安装方式。只安装此技能，先检查并备份已有同名技能，保留自定义内容。核对 SKILL.md 版本为 1.3.0，保留运行资源和 MIT LICENSE，保持 agents/openai.yaml 的准确中文说明。安装后报告实际路径、版本、技能识别结果和刷新要求；只做只读调用检查，不启动实际项目，不安装其他依赖。
 ```
 
-WorkBuddy 自定义包的官方入口是“技能 → 添加技能 → 上传技能”；其对话安装主要面向技能市场。若界面导入必须由用户完成，选择本地单技能 ZIP，随后确认启用。不要仅上传附件就认为已经完成导入。
+可用的 skill-installer 支持 GitHub URL，固定到 `project-manager-v1.3.0` 标签，目录为 `skills/project-manager`。按目标机实际配置确认技能目录；已有同名目录先备份并保留自定义内容，完整替换后核对版本。不要创建多个同名副本。安装后使用 `$project-manager`，并核对实际识别结果；当前会话必要时重新读取技能，刷新或重启是否必要以目标客户端为准。
 
-## 从 GitHub 安装：复制一段话
+## Claude Code
 
-### Codex
+复制上面的 GitHub 安装指令，要求使用当前客户端支持的个人技能目录，检查已有安装并核对版本。安装后确认 `/project-manager` 可发现。也可以把下载的 ZIP 交给支持文件访问的本地助手安装；具体目录和加载方式以当前客户端的官方规则为准。
+
+## WorkBuddy
+
+下载上方 ZIP，沿用此前核对的“技能 → 添加技能 → 上传技能”方式导入并确认启用。上传附件不等于完成技能导入；目前没有本版一句话从自定义 GitHub URL 自动安装的实测证据。不要推测安装目录。
+
+## 从 ZIP 安装与检查
+
+解压后顶层目录为 `project-manager/`。保留 `SKILL.md`、`agents/openai.yaml`、`references/records-and-handoff.md` 及 MIT `LICENSE`。包内中文 `README.md`、英文 `README.en.md`、配图和案例均可独立阅读。只有运行指令与必要引用是运行资源；图与案例供阅读。
+
+安装后先检查版本 **1.3.0**、文件完整性、中文界面说明以及客户端真实发现结果，再进行只读调用检查。确认安装不代表专业软件、账号和真实派工已配置齐全。
+
+## 验证范围与依据
+
+v1.3.0 有本机 Windows/Codex 合成小项目执行记录。其他客户端、第二台电脑和桌面技能列表刷新/重启显示尚未实测。安装目标机应重新检查当前环境。
+
+Codex GitHub URL 安装语法已与本机 `skill-installer` 说明核对（2026-11-18）；其他客户端沿用 2026-11-06 的官方依据，本轮未重新验证。
+
+- [Codex 技能说明](https://learn.chatgpt.com/docs/build-skills)
+- [Claude Code Skills](https://code.claude.com/docs/en/skills)
+- [WorkBuddy 技能](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)
+
+[返回中文首页](../README.zh-CN.md) · [技能说明](../skills/project-manager/README.zh-CN.md) · [安装排查](troubleshooting.md)
+
+## English: copy into Codex or a supported local client
 
 ```text
-请从 https://github.com/xmonk888-art/project-manager 的 skills/project-manager 目录，只安装 project-manager 到本机 Codex 可发现的个人技能目录。先核对当前版本的路径和已有同名安装；保留 SKILL.md、agents/openai.yaml、references/records-and-handoff.md 和 LICENSE，不覆盖已有自定义内容，不安装其他技能或依赖。完成后报告实际路径、版本和识别结果；需要新会话时说明。本轮只安装，不执行项目任务。
+Install only project-manager v1.3.0 from https://github.com/xmonk888-art/project-manager/tree/project-manager-v1.3.0/skills/project-manager. In Codex, use skill-installer; in other clients, verify the supported installation method first. Inspect and back up any existing installation and preserve customizations. Verify SKILL.md declares 1.3.0, retain runtime resources and MIT LICENSE, and keep the accurate Chinese interface description. Report the actual path, version, discovery result, and refresh requirements. Perform only a read-only invocation check; do not start a project or install other dependencies.
 ```
 
-当前官方文档列出的个人目录为 `~/.agents/skills/`，项目内为 `.agents/skills/`。已有配置或旧版路径先核对，不自动迁移或增加同名副本。可用 `$project-manager` 明确选择；宿主实际发现结果需要在目标机确认。
+The pinned GitHub URL identifies tag `project-manager-v1.3.0` and path `skills/project-manager`. Codex skill-installer supports this URL syntax; confirm the target machine's actual configuration. In Claude Code, use its supported skill directory and confirm discovery. WorkBuddy uses its existing Skills → Add skill → Upload skill guidance with the ZIP; automatic custom-URL installation has not been tested.
 
-### Claude Code
-
-```text
-请从 https://github.com/xmonk888-art/project-manager 的 skills/project-manager 目录，只安装 project-manager 到本机 Claude Code 的个人技能目录 ~/.claude/skills/project-manager/。先检查已有同名版本；保留 SKILL.md、agents/openai.yaml、references/records-and-handoff.md 和 LICENSE，不覆盖已有自定义内容，不安装其他技能或依赖。完成后报告路径、版本及 /project-manager 是否可发现；需要新会话时说明。本轮只安装，不执行项目任务。
-```
-
-个人技能使用 `~/.claude/skills/`，项目内使用 `.claude/skills/`。在实际 Claude Code 本地会话中确认 `/project-manager`；这不等同于 Cowork 或云会话的安装方式。
-
-### WorkBuddy
-
-下载单技能 ZIP，通过“添加技能 → 上传技能”导入，再发送：
-
-```text
-我已通过“添加技能 → 上传技能”导入 project-manager。请确认技能是否已安装并启用，能否读取 SKILL.md 及 references/records-and-handoff.md；报告实际识别结果。若尚未导入，请明确告知，不把附件可读取写成已安装。本轮只检查安装状态，不执行项目任务。
-```
-
-没有确认自定义 GitHub 技能可由一句话自动导入的端到端能力，因此当前不承诺同一段话在三个客户端都能全自动安装。也不编造 `.workbuddy/skills/` 路径。
-
-## 最小文件与已有安装
-
-```text
-project-manager/
-├── SKILL.md
-├── agents/openai.yaml
-├── references/records-and-handoff.md
-└── LICENSE
-```
-
-前三项是运行指令与资源；LICENSE 随复制和分发保留。`agents/openai.yaml` 保持中文简短说明，其他宿主未使用该界面文件时也可随包保留。图、案例与 README 供阅读，不是运行依赖。
-
-已有同名目录时先比对内容和版本，保留备份，在暂存目录准备完整新版本后再替换，避免把旧文件残留合并进去。当前没有必要的外部依赖安装脚本；专业制作软件和账号按后续任务另行核对。
-
-## 安装完成后
-
-先核对实际识别，再选择[只读检查](../skills/project-manager/README.zh-CN.md#check)或[执行已授权任务](../skills/project-manager/README.zh-CN.md#execute)。确认安装不等于专业软件齐全或真实派工已通过。
-
-## 官方依据（2026-11-06 核对）
-
-- [Codex：本地技能与发现目录](https://learn.chatgpt.com/docs/build-skills)
-- [Claude Code：Skills 与加载位置](https://code.claude.com/docs/en/skills)
-- [WorkBuddy：技能、对话安装与上传技能](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)
-
-[返回总库](../README.zh-CN.md) · [技能说明](../skills/project-manager/README.zh-CN.md) · [使用排查](troubleshooting.md)
-
-## 更新已有安装
-
-升级前保留同名技能的自定义内容，再同步新版运行文件。已打开的对话请重新读取新版 SKILL.md；不能仅凭文件替换推断当前对话已加载新规则。
+Preserve all runtime resources and MIT LICENSE. Back up an existing installation, retain customizations, verify version 1.3.0 and discovery, and perform a read-only invocation check. Runtime behavior in other clients/computers and desktop refresh/restart remain untested. The Codex installer syntax was checked against the local installer instructions on 2026-11-18; the other-client guidance retains official sources checked on 2026-11-06.

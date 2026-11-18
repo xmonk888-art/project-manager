@@ -2,6 +2,17 @@
 
 总库逐项记录技能和资料变化；技能版本以各自 `SKILL.md` 和技能内版本记录为准，不把总库资料修订自动当成所有技能升级。
 
+## 1.3.0 · 2026-11-18
+
+- 接手先依据实际产物判断进度，旧“完成”绑定目标、版本和证据，不猜百分比。
+- 区分最终目标、阶段目标、当前任务，记录目标版本、确认依据及授权阶段。
+- 每阶段映射最终验收并继续已授权必要工作；方法在授权内调整，明确目标变更、暂停或取消遵从新指令。
+- 保留 1.2.0 的必要验收、自动修复、复验和真实阻塞处理；不把这些既有行为当成本版首次新增。
+- 本机合成离线小项目：测试方模拟目标确认；确认前 7 文件不变；固定验收首次 7 失败、1 报错，修复后 8/8 通过；新增 21 条数据复核与 4 浏览器场景通过。
+- 新增目标流程、目标关系及新实测的中英文展示；历史 VI 案例保持原版本归属。中英文介绍、配图和独立 ZIP 随本版同步发布。
+
+Assess evidence-backed progress; distinguish final goal, stage goals, and current tasks; retain goal version, approval evidence, and scope. Map each stage to final acceptance and continue ready, authorized work. Existing repair/recheck behavior is retained. A synthetic offline trial with tester-simulated approval recorded 7 failures and 1 error before repair, then 8/8 passing, plus a 21-row independent review and 4 browser scenarios. No skill-version control or long-run guarantee is implied. Bilingual documentation, diagrams, and the standalone ZIP are synchronized for this release.
+
 ## 1.2.0 · 验收驱动的持续执行 / Acceptance-driven execution
 
 - 将已确认目标转成必要验收清单；可选改进单列，不自行降低标准。

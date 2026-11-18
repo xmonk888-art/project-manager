@@ -1,42 +1,46 @@
-# 验证记录与能力边界
+# 验证记录与能力边界 / Validation scope
 
-当前发布版本为 **1.2.0**。下述真实运行发生于首发前，使用更名前的技能标识。这里区分设计核验、创建检查和真实运行，避免把不同阶段的结论混用。
+当前资料对应 **project-manager 1.3.0**。不同版本的证据分别保留；不把文档场景、历史只读复核和本版合成实测混为一项。
 
-## v1.2.0 检查范围
+## 1.3.0：2026-11-17 合成离线小项目
 
-本版完成技能格式校验、YAML 解析、中文说明和引用路径检查，以及验收失败、常规返工、用户暂停和真实阻塞等文档场景复核。新版运行文件与本机已批准版本一致。
+环境：本机 Windows/Codex；执行项目使用 Python 3.10.22 标准库。一个不继承主对话历史的真实执行助手读取新版技能，接手 CSV 报告工具原型。测试方模拟使用者确认目标，执行助手串行制作、修复和交付，未继续派生员工。
 
-文档推演不等于项目实测：v1.2.0 的持续执行行为尚未用真实开发项目验证；桌面技能列表刷新、其他客户端和跨电脑执行尚未实测。下方 VI 数字属于首发前历史记录。
+| 核验 | 记录结论 |
+| --- | --- |
+| 接手位置 | 识别旧完成状态只覆盖 v1 原型，v2 缺交付与验收 |
+| 确认前只读 | 7 个初始文件哈希不变，新增文件 0 |
+| 固定验收 | 首次 8 项中 7 失败、1 报错；修复后 8/8 通过；两轮绑定不同源码哈希 |
+| 保留标准 | 原始要求、说明、对话材料、输入和验收脚本哈希不变 |
+| 交付包 | ZIP 解压后的真实运行通过，包与源码一致 |
+| 主助手后续独立复核 | 使用新增 21 条 BOM CSV，检查混合状态、重复编号、顺序、转义和晚出现的非法行保护 |
+| 浏览器 | 两份报告 × 1440 / 390 宽度，共 4 场景通过；无横向溢出、脚本错误或外部资源请求 |
+| 技能静态检查 | 格式、YAML、中文界面说明、引用路径及许可与无关配置完整性通过 |
 
-## 已有证据
+执行助手交接时未做浏览器视觉检查；上表浏览器结果来自主助手之后的检查，不追写成该执行助手当时已做。一次进度询问后的继续执行可由后续代码、包、复验和交接佐证。
 
-| 时间与类型 | 实际做过的工作 | 结论范围 |
-| --- | --- | --- |
-| 2026-11-04，创建前设计核验 | 读取真实项目资料，核对版本与交付，推演缺技能及迁移条件 | 支持方案可行性；当时尚未证明新技能可运行 |
-| 2026-11-04，技能创建检查 | 格式校验、YAML 解析、中文界面说明、引用与运行文件包一致性检查 | 文件和配置检查通过；不等于协作实跑 |
-| 2026-11-05，真实只读协作 | 主助手组织 3 名真实子助手，读取匹配技能，检查 PDF、视觉材料和资产，进行交接复核与报告补证回查 | 当前 Windows/Codex 环境的本轮只读协作链路通过 |
+[新案例与脱敏摘要](../cases/goal-driven-trial-20261117/README.md)。这是维护者根据本地记录整理的有限实践证据。公开材料未提供完整可重放实验包，不是第三方认证，也不是效率基准。源码前后比较反映该测试项目修复，不是技能 1.2.0 与 1.3.0 的对照。
 
-后一轮真实运行补上了早期记录中的“派工尚未实测”。早期记录仍保留当时事实，不能单独拿它推翻后续已完成的实测。
+## 历史记录
 
-## 本轮运行结果
+| 时间 / 版本 | 实际工作与边界 |
+| --- | --- |
+| 2026-11-04 创建前与初版 | 真实资料设计核验、格式、配置和运行文件检查；当时尚未证明协作实跑 |
+| 2026-11-05 task-orchestrator 1.0.0 | 真实只读 VI 协作：3 名子助手、13 页 PDF、81 份原文件不变，一次报告哈希补证回查 |
+| project-manager 1.2.0 | 格式、配置及失败修复、暂停、阻塞等文档场景；当时尚无本版开发项目执行实测 |
 
-- 3 名真实子助手，各有明确任务与独立输出。
-- PDF 技能用于实际审查；当前规范重新渲染 13 页。
-- 四个浏览器场景中，图像解码检查通过，无横向溢出。
-- 一份报告缺少输入和截图的哈希绑定，经退回、补充和定向回查关闭。
-- 81 份原有文件保持不变，变化 0，缺失 0；新增证据与原稿分开保存。
+[VI 原案例](../cases/vi-readonly-20261105/README.md)保留更名前名称与版本。只读报告通过不等于设计缺陷已修复，更不证明本版新功能。
 
-检查发现了字重样张与参考字体不一致等问题。原项目仍为审阅状态，问题没有在只读任务中擅自修复。报告交接通过不代表设计无缺陷或生产可用。
+## 未验证
 
-详见[脱敏案例](../cases/vi-readonly-20261105/README.md)。公开的是维护者提供的文字与数字摘要；客户源文件、截图和完整业务日志未发布，外部读者不能仅凭此摘要独立重放原实验。
+真实客户生产项目、1.3.0 多员工并行、另一台电脑、其他宿主或操作系统、真实跨会话中断恢复、长期运行、会话关闭后的自行执行、专业源稿编辑保存重开、印刷及实物打样均未由本次测试覆盖。桌面技能列表刷新、重启后的显示未实测。没有旧版或不用技能的对照，不报告效率提升或总体成功率。
 
-## 尚未验证
+## English
 
-- 第二台电脑实际安装、技能发现、软件连接与完整执行。
-- 其他宿主或操作系统的运行表现。
-- 跨会话真实中断后的恢复行为与长期离线持续运行。
-- 修改原生制作文件、目标软件编辑保存重开、印刷与实体打样。
-- 生成账号、付费生成流程、长期运行性能和费用。
-- 通过率、效率提升、与不用本技能的对照效果；未采集对照基线。
+This documentation covers **project-manager 1.3.0**. On 2026-11-17, one real assistant in local Windows/Codex read the new skill and worked on a synthetic offline CSV report project using Python 3.10.22. The tester simulated user approval. The assistant executed serially, without delegating further.
 
-新任务应依据自己的交付要求选择验收，不因这一例通过就省略必要检查，也不在输入与产物未变时无理由重复已有验证。
+Before approval, all 7 initial file hashes were unchanged and no new files appeared. The fixed 8-check suite initially recorded 7 failures and 1 error; after repair, all 8 passed, bound to a different source hash. Protected requirements and the acceptance script were unchanged. The extracted ZIP ran successfully. The coordinator subsequently reviewed 21 new BOM CSV rows and both reports at widths 1440 and 390: all 4 browser scenarios passed, without overflow, script errors, or external requests. Browser checks occurred after the execution assistant's handoff. Skill format, YAML, references, and unrelated configuration integrity were also checked.
+
+The [public case](../cases/goal-driven-trial-20261117/README.md) is a sanitized maintainer-reported summary, not a replayable benchmark or independent certification. It is not a comparison of skill versions. The [historical VI case](../cases/vi-readonly-20261105/README.md) remains attributed to task-orchestrator 1.0.0 on 2026-11-05; its 3 workers, 13 PDF pages, and 81 unchanged originals do not validate new 1.3.0 behavior.
+
+Real customer production work, multi-worker execution in 1.3.0, other hosts/computers, long runs, actual interruption recovery, automatic work after session closure, and native production-file workflows remain untested. Desktop list refresh/restart was not verified. No controlled efficiency or overall-success-rate claim is supported.

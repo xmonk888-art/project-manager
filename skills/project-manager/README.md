@@ -1,129 +1,120 @@
-<p align="center"><picture><source media="(max-width: 600px)" srcset="../../assets/brand/project-manager.mobile.en.png"><img src="../../assets/brand/project-manager.en.png" alt="project-manager: recover context, coordinate skills and review work" width="960"></picture></p>
+# project-manager
+
+Assess actual progress, then coordinate work and verification around the confirmed final goal.
+
+[简体中文](README.zh-CN.md) · [Get and install](#install) · [New behavior](#features) · [Start](#start) · [Trial](#case)
+
+<p align="center"><a href="../../assets/v1.3.0/goal-flow.en.svg"><picture><source media="(max-width: 600px)" srcset="../../assets/v1.3.0/goal-flow.mobile.en.png"><img src="../../assets/v1.3.0/goal-flow.en.png" alt="Assess progress, confirm the final goal, execute stages, repair and recheck failures, record blockers, and deliver after required checks pass." width="960"></picture></a></p>
 
 <a id="latest-release"></a>
 
-> **Latest version · v1.2.0**
+> **Latest version · v1.3.0**
 >
-> Turn the approved goal into required acceptance checks. Assign repairs after failed checks and verify the results again. Continue after progress reports; deliver when required checks pass, or record a genuine blocker and a recovery point.
+> Verify actual progress, distinguish the final goal from stage goals and current tasks, and check every handoff against final acceptance. Retain repair, recheck, and genuine-blocker handling.
 >
-> [Download the update](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.2.0/project-manager-1.2.0.zip) · [Full release notes](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.2.0)
-
-<p align="center"><strong>Connect responsibilities, specialist skills, and review around one goal.</strong></p>
-<p align="center"><a href="README.zh-CN.md">简体中文</a> · <a href="../../README.md">Skill library</a> · <a href="#install">Install</a> · <a href="#check">Read-only review</a> · <a href="#execute">Execute</a> · <a href="#case">Real run</a></p>
-
-Clarify the goal, scope, and current inputs. For new work, submit a plan with roles, deliverables, and acceptance criteria for user approval. Resume approved work within the agreed scope and reconfirm material changes.
-
-
-## How the work connects
-
-<p align="center"><a href="../../assets/overview/work-board.en.svg"><picture><source media="(max-width: 600px)" srcset="../../assets/overview/work-board.mobile.en.png"><img src="../../assets/overview/work-board.en.png" alt="Project task board: recover context, submit a plan for approval, then execute and verify." width="960"></picture></a></p>
-
-The coordinator owns the goal and integration. Shared artifacts and stateful sessions have one writer. Review actual outputs after each handoff; failed checks trigger repairs and affected-scope verification. Deliver when required checks pass, or report genuine blockers and recovery conditions.
+> [Download the update](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.3.0/project-manager-1.3.0.zip) · [Full release notes](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.3.0)
 
 <a id="install"></a>
 
-## Copy an install prompt
+## Get and install
 
-**Codex / Claude Code**　Copy the whole block and paste it into a local client chat.
+Install the pinned **v1.3.0** skill from GitHub, or download the standalone ZIP above.
+
+**Codex / Claude Code: copy into a local client chat.**
 
 ```text
-Install project-manager from this GitHub repo:
-https://github.com/xmonk888-art/project-manager
-Use the skills/project-manager directory.
-Confirm the personal skill path for this client
-and version. Preserve SKILL.md, agents/openai.yaml,
-references/records-and-handoff.md, and LICENSE.
-Keep any existing customizations.
-Install only. Report the path, version,
-and whether the client detects the skill.
+Install only project-manager v1.3.0 from https://github.com/xmonk888-art/project-manager/tree/project-manager-v1.3.0/skills/project-manager. In Codex, use skill-installer; in other clients, verify the supported installation method first. Inspect and back up any existing installation and preserve customizations. Verify SKILL.md declares 1.3.0, retain runtime resources and MIT LICENSE, and keep the accurate Chinese interface description. Report the actual path, version, discovery result, and refresh requirements. Perform only a read-only invocation check; do not start a project or install other dependencies.
 ```
 
-**WorkBuddy**　[Download the standalone ZIP](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.2.0/project-manager-1.2.0.zip), then import it with **Skills → Add skill → Upload skill**.
+**WorkBuddy:** use the standalone ZIP and the existing **Skills → Add skill → Upload skill** guidance, then confirm activation. Other-client instructions are carried forward; **installation of this version in those clients has not been tested**.
 
-[Setup by client (中文)](../../docs/installation.md) · [Release notes](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.2.0)
+[Client setup and checks](../../docs/installation.md) · [Troubleshooting (中文)](../../docs/troubleshooting.md)
 
-## Start in five steps
+<a id="features"></a>
 
-| Step | Action |
-| --- | --- |
-| 1. Obtain | Get this skill from the local review package or repository; preserve relative paths and LICENSE |
-| 2. Place | Copy runtime files and LICENSE to the chosen client's skill location, or upload the package in WorkBuddy |
-| 3. Confirm | Confirm skill discovery or import and readable references in the selected client |
-| 4. Choose | Select read-only review or execution of authorized work below |
-| 5. Review | Look for actual outputs, verification evidence, and unresolved issues |
+## 1.3.0: connect every stage to the final delivery
 
-[Detailed setup (中文)](../../docs/installation.md) · [Troubleshooting (中文)](../../docs/troubleshooting.md)
+Use this skill to take over an existing project, coordinate multiple stages, or avoid stopping after a partial result. Simple standalone tasks can use a specialist skill directly.
+
+| Problem | Behavior | Visible result |
+| --- | --- | --- |
+| An old record says complete, but outputs are missing | Check goal version, files, and acceptance evidence | Evidence-backed completion, pending checks, unstarted work, and blockers; no guessed percentage |
+| A task ends before the project goal is met | Map final goal, stage goals, and current tasks to required checks | Goal record, stage order, deliverables, and pass conditions |
+| Every update needs another request to continue | Continue ready, required work within authorization; repair and recheck | Actual outputs, verification evidence, and remaining work |
+| The goal or conditions change | Adjust methods within scope; follow explicit goal changes, pauses, or cancellation | Goal version, confirmation evidence, changes, and recovery conditions |
+
+<p align="center"><a href="../../assets/v1.3.0/goal-board.en.svg"><picture><source media="(max-width: 600px)" srcset="../../assets/v1.3.0/goal-board.mobile.en.png"><img src="../../assets/v1.3.0/goal-board.en.png" alt="Final goal, stage goals, and current tasks connect to required checks, goal version, and confirmation evidence." width="960"></picture></a></p>
+
+This is a workflow illustration. A final goal may span several stages; if only one stage is authorized, deliver and report that stage. Reuse valid, unchanged approval. Submit a plan for confirmation before new work or material scope changes.
+
+Repair and recheck, useful delegation, and one writer per shared artifact are existing capabilities. This version binds them more explicitly to the final goal. One assistant can carry responsibilities in sequence; real subagents depend on host support and authorization. The skill includes no specialist software, model accounts, or background runner.
 
 <a id="start"></a>
 
-Invocation: the templates below use Codex `$project-manager`. In Claude Code, start with `/project-manager`. In WorkBuddy, import and enable the skill first, then explicitly ask to use project-manager. Confirm actual discovery in your client; mentioning the name alone does not prove that it loaded.
+## Start with a concrete task
 
-## Choose how to start
-
-**[A · Review first](#check)** to understand project state and gaps.  
-**[B · Execute authorized work](#execute)** to progress within a defined scope.
+Invocation is unchanged: Codex uses `$project-manager`; Claude Code uses `/project-manager`; in WorkBuddy, import and enable the skill, then ask to use project-manager. Mentioning the name does not prove it loaded.
 
 <a id="check"></a>
 
-### A · Read-only review
+### A · Assess progress read-only
 
 ```text
-Use $project-manager for a read-only startup review of this project.
-Recover the goal, stage, and authoritative inputs. Propose roles, skills,
-capability gaps, and acceptance criteria. Do not edit, delegate, or install. That is the scope of this run.
+Use $project-manager to assess actual progress and authoritative source versions.
+Distinguish final goal, stage goals, and current tasks. List completion evidence,
+pending checks, unstarted work, and blockers. Recover valid approval and scope;
+if missing, submit a goal record and plan for my confirmation.
+Do not edit files, delegate, install, or publish this turn.
 ```
 
-Expect an assessment and recommendations, not claims that workers have executed or originals changed.
+Expect an assessment, goal record, and plan. Read-only assessment should not produce edits or installations.
 
 <a id="execute"></a>
 
-### B · Execute authorized work
-
-For a new project, define the goal, deliverables, and scope, then get the plan approved. Use the prompt below to continue an approved plan.
+### B · Continue approved work
 
 ```text
-Use $project-manager to continue this project's approved plan.
-Track required acceptance checks; repair failures and verify the results.
-Continue after progress updates. Deliver after required checks pass,
-or record a genuine blocker and a recovery point.
-Recover current state, assign useful responsibilities, use available skills,
-and check the outputs. Handle routine decisions and permitted fixes.
-Report actual deliverables, evidence, and unresolved issues. If a necessary
-action exceeds authorization, finish independent work and explain the impact.
+Use $project-manager to recover the confirmed final goal, goal version, and scope.
+Check each stage against final deliverables and required acceptance conditions.
+Continue tasks whose dependencies are met. Answer progress questions, then resume.
+Repair and recheck failures against the original criteria; do not lower them.
+Report delivery when required checks pass and outputs are complete. For genuine
+blockers, retain evidence and recovery conditions. Follow explicit goal changes,
+pause, or cancellation, and remain within existing authorization.
 ```
 
-Expect actual deliverables, checks, and unresolved issues. Delegate only when the host supports and permits it; otherwise proceed serially. This is a usage template. Existing real-run evidence covers read-only collaboration, not production editing.
-
-For continuation or another computer, see [handoff prompts (中文)](../../docs/usage.md).
+[More task and continuation prompts](../../docs/usage.md) · [Portability limits (中文)](../../docs/portability.md)
 
 <a id="case"></a>
 
-## In practice: find issues and close an evidence gap
+## New trial: from an old prototype to a runnable report package
 
-- Reconciled outdated tasks with later successful work instead of blindly repeating them.
-- Identified font problems in the manual and reference artwork, leaving originals for a later authorized revision.
-- Supplemented a missing report hash binding and closed it through a targeted independent recheck.
+**2026-11-17 · project-manager 1.3.0 · Local Windows/Codex · Synthetic offline project.** One real execution assistant took over a CSV prototype marked complete and identified missing HTML, input protection, documentation, and a ZIP under the new goal. After the tester simulated user approval of goal v2, the assistant built, repaired, rechecked, and handed over the project serially, without further delegation.
 
-<p align="center"><a href="../../assets/overview/review-evidence.en.svg"><picture><source media="(max-width: 600px)" srcset="../../assets/overview/review-evidence.mobile.en.png"><img src="../../assets/overview/review-evidence.en.png" alt="Read-only VI case: 3 subagents, 13 PDF pages reviewed, 81 unchanged originals, and an independent recheck." width="960"></picture></a></p>
+<p align="center"><a href="../../assets/v1.3.0/trial-evidence.en.svg"><picture><source media="(max-width: 600px)" srcset="../../assets/v1.3.0/trial-evidence.mobile.en.png"><img src="../../assets/v1.3.0/trial-evidence.en.png" alt="Synthetic offline trial: 7 files unchanged before approval; 7 failures and 1 error became 8/8 passing; additional 21-row review and 4 browser scenarios passed." width="960"></picture></a></p>
 
-Sanitized, maintainer-reported summary drawn from the 2026-11-05 local run, not a software screenshot. Client inputs remain private; no comparative baseline was collected.
-
-[Roles and acceptance (中文)](../../cases/vi-readonly-20261105/README.md) · [Evidence scope (中文)](../../docs/validation.md)
-
-## Current capability status
-
-**v1.2.0 validation scope:** Format, configuration, and document scenarios checked; continued execution has not been tested on a real development project.
-
-| Scope | Status |
+| Check | Recorded result |
 | --- | --- |
-| Local Windows/Codex read-only delegation, skill use, and report recheck | Real-run evidence available |
-| Execute / revise mode | Instructions defined; verify each task's delivery; production editing untested |
-| Another computer, other hosts, real interruption recovery, long runs | Untested |
+| Read-only before confirmation | All 7 initial file hashes unchanged; 0 new files |
+| Fixed acceptance and repair | Initially 7 failures and 1 error; after repair 8/8 passed, bound to different source hashes |
+| Final delivery | Actual execution from the extracted ZIP passed; required outputs present |
+| Additional coordinator review | 21 new BOM CSV rows checked for duplicate IDs, order, special characters, and invalid-input protection |
+| Browser review | Sample and additional reports at widths 1440 / 390; all 4 scenarios passed |
 
-Specialist skills, tools, fonts, software, and credentials come from the target environment. No background service or independent read-only sandbox is included. Real delegation follows host capabilities, authorization, and concurrency limits.
+The graphic and numbers are a maintainer-reported summary of local records, not software screenshots. The tester simulated user confirmation. No old-version or no-skill control was collected; this does not quantify efficiency or guarantee long-running execution. The public summary omits the complete source and raw logs needed to replay the experiment.
 
-## Runtime and license
+[Method, results, and sanitized evidence](../../cases/goal-driven-trial-20261117/README.md) · [Validation scope](../../docs/validation.md)
 
-Current release: **1.2.0**. Only `SKILL.md`, `agents/openai.yaml`, and `references/records-and-handoff.md` are required; artwork and cases are reader documentation.
+## Historical evidence and untested scope
 
-Licensed under MIT. Copyright (c) 2026 xmonk888-art. [MIT and scope](../../LICENSE-STATUS.md) · [Changelog](CHANGELOG.md) · [Portability (中文)](../../docs/portability.md)
+The [2026-11-05 read-only VI review](../../cases/vi-readonly-20261105/README.md) used **task-orchestrator 1.0.0**, before the rename: 3 subagents, 13 PDF pages, and 81 unchanged originals. It retains that version attribution and does not verify the new 1.3.0 behavior.
+
+Real customer production projects, multi-worker execution in 1.3.0, long runs, other hosts, another computer, and automatic recovery after session closure remain untested. Desktop skill-list refresh and display after restart are also unverified. Future tasks need their own acceptance checks.
+
+## Skill, project, and license
+
+Obtain one skill's resources; keep business source files, state, and deliverables in the actual project. Runtime resources are `SKILL.md`, `agents/openai.yaml`, and `references/records-and-handoff.md`; retain `LICENSE` in distribution. Artwork and cases are reader documentation.
+
+Current version **1.3.0**. MIT · Copyright (c) 2026 xmonk888-art.
+
+[Library](../../README.md) · [Changelog](CHANGELOG.md) · [License scope](../../LICENSE-STATUS.md) · [Contributing](../../CONTRIBUTING.md) · [Acknowledgements](../../ACKNOWLEDGEMENTS.md)

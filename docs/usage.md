@@ -8,7 +8,8 @@
 
 ```text
 使用 $project-manager，以当前项目为对象，结合当前可读取的对话和项目资料，
-判断目标、阶段及权威版本，提出员工分工、技能调用、能力缺口和验收方案，
+判断实际进度及权威版本，区分最终目标、阶段目标、当前任务，列出完成证据、待验收、未开始与阻塞；
+提出员工分工、技能调用、能力缺口和验收方案，
 输出项目启动单。本轮不修改源文件、不实际派工、不创建或安装技能。
 ```
 
@@ -19,7 +20,8 @@
 新项目可复制这段启动指令。计划确认后再进入执行。
 
 ```text
-使用 $project-manager，先跟我梳理目标、范围与限制，
+使用 $project-manager，先跟我梳理最终目标、最终交付物、必要通过条件、本次授权阶段与限制，
+核对实际进度，并记录目标版本和确认依据，
 提出分工、交付物、执行步骤和验收标准。
 先给我审阅计划，等我确认后再执行。
 ```
@@ -33,7 +35,9 @@
 保留限制：【必须保留的源文件、禁止动作及外部发布限制】。
 根据已知对话恢复状态，读取适用的已有专业技能。
 有必要且宿主能力和权限允许时委派子助手；否则串行推进并说明。
-把已确认目标列为必要验收清单，阶段汇报后继续工作。
+恢复已确认的最终目标版本和确认依据，把最终交付列为必要验收清单。
+每个阶段注明支撑哪项最终验收，阶段结束后继续下一项已授权且依赖已满足的工作。
+进度询问先回答再继续；明确改目标、暂停或取消遵从最新指令。
 检查失败自动安排范围内修复，并复验原问题和受影响功能。
 必要项全部通过后交付；真实阻塞时保留进度、证据和恢复入口，不降低标准。
 遇到超出授权的必要动作，先完成可独立推进的工作，再说明具体影响。
@@ -45,7 +49,8 @@
 
 ```text
 使用 $project-manager，继续当前项目。
-先读取项目入口、状态与最新成果，核对已确认决定、有效验收证据和版本替代关系。
+先读取项目入口、状态与最新成果，核对最终目标版本、确认依据、阶段与最终验收的对应关系。
+旧“完成”只按对应目标与有效证据判断；已有确认有效且未变更时直接沿用。
 沿用已确认的计划与仍然有效的授权，从尚未完成的任务继续；不因旧日志写着待办而盲目重跑。
 授权或权威输入无法确认时，标明缺口并继续可独立完成的部分。
 完成后汇报本次新增成果、复用的检查及仍待处理项。
@@ -57,7 +62,7 @@
 
 ```text
 使用 $project-manager，接手当前项目交接包。
-先核对目标、阶段、权威源稿、确认决定和已有检查，再把项目内相对路径映射到本机。
+先核对最终目标版本、确认依据、当前阶段、权威源稿、授权及已有检查，再把项目内相对路径映射到本机。
 分别检查调度技能、专业技能、软件工具、字体和账号连接。
 按“已可做、需要替代、待补条件”列出结果，在已有授权范围内继续可完成的部分。
 缺失能力先评估通用方法能否可靠满足验收，不擅自安装技能、修改软件配置或登录账号。
@@ -78,3 +83,30 @@
 有 `skill-research` 时可调用它；没有时仍可依据来源核实候选，不把“找到”写成“已安装或实测”。
 
 [返回技能说明](../skills/project-manager/README.zh-CN.md)
+
+## 6. 最小任务示例：从“有原型”到“同事能使用”
+
+以一个 CSV 报告工具为例，目标不只写“修复脚本”，而是“同事能解压离线运行，得到准确 JSON 和可读 HTML；错误输入不得覆盖已有报告”。当前阶段可依次为核对原型、实现修复、打包说明、交付验收；每阶段注明对应的必要条件。此例展示用法，不授权读者环境中的实际制作。
+
+在确认目标前，只读核对原型与旧状态，提交目标确认单。确认后在允许范围内制作和检查。HTML 成功不代表 ZIP 已能运行；只有本次必要项齐全并通过才报告范围内验收通过。若本次只授权调研，就交付调研，不自动进入制作。
+
+本版一次合成离线实测见[案例](../cases/goal-driven-trial-20261117/README.md)。没有跨电脑、长期运行或关闭会话后自行恢复的验证。
+
+## English: goal-led start and continuation
+
+For a new project, assess actual progress and submit a goal record and plan first. Include the user-usable result, final deliverables, required pass conditions, authorized stages, exclusions, goal version, and confirmation evidence. Existing valid approval should be reused without repeated confirmation.
+
+```text
+Use $project-manager to recover this project's confirmed final goal and scope.
+Compare actual outputs with the goal version and acceptance evidence; do not
+inherit an old completion claim without checking what it covered.
+Map each stage and current task to required final acceptance checks.
+Continue authorized work whose dependencies are ready. Answer progress questions,
+then resume. Repair and recheck failures without lowering the criteria.
+Follow explicit goal changes, pause, or cancellation. Record real blockers and
+recovery conditions; report completion only for the verified authorized scope.
+```
+
+A minimal example is a CSV report tool: the final result is a ZIP a colleague can extract and run offline to obtain accurate JSON and readable HTML, with invalid input preserving existing reports. Implementing the script alone does not establish final delivery. If only assessment is authorized, stop at its agreed deliverable.
+
+Codex uses `$project-manager`; Claude Code uses `/project-manager`; WorkBuddy requires import and activation first, followed by an explicit request to use project-manager. These invocation notes do not establish cross-client test coverage. [Trial evidence](../cases/goal-driven-trial-20261117/README.md) · [Validation boundaries](validation.md)

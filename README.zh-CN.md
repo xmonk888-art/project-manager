@@ -1,80 +1,119 @@
-<p align="center"><a href="assets/overview/project-flow.zh-CN.svg"><picture><source media="(max-width: 600px)" srcset="assets/overview/project-flow.mobile.zh-CN.png"><img src="assets/overview/project-flow.zh-CN.png" alt="接收项目、提交计划、确认后分工执行并验收" width="960"></picture></a></p>
+# xualab · 项目管家 1.3.0
+
+xualab 收录可独立使用的技能。当前技能是**项目管家 project-manager**：先判断进度，再围绕已确认的最终目标持续推进。
+
+[English](README.md) · [获取与安装](#install) · [新功能](#features) · [开始使用](#start) · [本次实测](#case)
+
+<p align="center"><a href="assets/v1.3.0/goal-flow.zh-CN.svg"><picture><source media="(max-width: 600px)" srcset="assets/v1.3.0/goal-flow.mobile.zh-CN.png"><img src="assets/v1.3.0/goal-flow.zh-CN.png" alt="核实进度，确认最终目标，执行各阶段；失败修复复验，受阻保存状态，必要项通过后交付。" width="960"></picture></a></p>
 
 <a id="latest-release"></a>
 
-> **最新版 · v1.2.0**
+> **最新版 · v1.3.0**
 >
-> 把已确认目标变成必要验收清单。检查失败后自动安排修复并复验，阶段汇报后继续推进；必要项全部通过才交付，真实阻塞时保留进度和恢复入口。
+> 接手时核实实际进度，区分最终目标、阶段目标与当前任务；每次交接对照最终验收继续推进。保留失败修复、复验和真实阻塞记录。
 >
-> [下载新版](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.2.0/project-manager-1.2.0.zip) · [完整更新说明](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.2.0)
-
-<p align="center"><strong>让 AI 按小型项目团队的方式组织工作。</strong></p>
-<p align="center"><a href="README.md">English</a> · 简体中文 · <a href="#skills">选择技能</a> · <a href="#case">实测展示</a> · <a href="#install">获取与安装</a></p>
-
-xualab 是可逐步扩充的技能总库：每个技能负责一种清楚的工作，可独立取得，按任务需要组合使用。当前首个技能是 **project-manager**，用于项目管家。
-
-<a id="skills"></a>
-
-## 选择一个技能开始
-
-<table><tr><td><h3><a href="skills/project-manager/README.zh-CN.md">project-manager · 项目管家</a></h3><p>梳理需求并提交计划。经用户确认后分工执行、调用专业技能并验收。</p><p><a href="skills/project-manager/README.zh-CN.md#install">安装单个技能 →</a>　<a href="skills/project-manager/README.zh-CN.md#start">选择任务模式 →</a>　<a href="cases/vi-readonly-20261105/README.md">看一轮实测 →</a></p></td></tr></table>
-
-不用先安装整个总库。进入技能页，按说明取得三个运行文件，再放到你真正要处理的业务项目中。
+> [下载新版 ZIP](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.3.0/project-manager-1.3.0.zip) · [完整更新说明](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.3.0)
 
 <a id="install"></a>
 
-## 复制安装指令
+## 获取与安装
 
-**Codex / Claude Code**　复制下面整段，粘贴到本机客户端的对话里。
+可直接从 GitHub 安装指定的 **v1.3.0**，或下载上方单技能 ZIP。
+
+**Codex / Claude Code：复制到本地客户端对话。**
 
 ```text
-请从下方仓库的 skills/project-manager 目录
-安装 project-manager。
-https://github.com/xmonk888-art/project-manager
-根据当前客户端和版本，核对个人技能目录。
-保留 SKILL.md、agents/openai.yaml、
-references/records-and-handoff.md 和 LICENSE。
-如有同名安装，保留现有自定义内容。
-本轮仅安装技能。完成后报告安装位置、
-版本和客户端识别结果。
+请从 https://github.com/xmonk888-art/project-manager/tree/project-manager-v1.3.0/skills/project-manager 安装项目管家 project-manager v1.3.0。Codex 请使用 skill-installer；其他客户端先核对实际支持的安装方式。只安装此技能，先检查并备份已有同名技能，保留自定义内容。核对 SKILL.md 版本为 1.3.0，保留运行资源和 MIT LICENSE，保持 agents/openai.yaml 的准确中文说明。安装后报告实际路径、版本、技能识别结果和刷新要求；只做只读调用检查，不启动实际项目，不安装其他依赖。
 ```
 
-**WorkBuddy**　[下载单技能 ZIP](https://github.com/xmonk888-art/project-manager/releases/download/project-manager-v1.2.0/project-manager-1.2.0.zip)，然后在「技能 → 添加技能 → 上传技能」导入。
+**WorkBuddy：**下载该单技能 ZIP，按已有说明通过“技能 → 添加技能 → 上传技能”导入并确认启用。其他客户端说明沿用既有资料，**未进行本版安装实测**。
 
-[分客户端安装说明](docs/installation.md) · [版本说明](https://github.com/xmonk888-art/project-manager/releases/tag/project-manager-v1.2.0)
+[分客户端安装与检查](docs/installation.md) · [安装排查](docs/troubleshooting.md)
 
-## 总库、技能和项目，各放什么
+<a id="features"></a>
 
-| 位置 | 用途 |
-| --- | --- |
-| xualab 总库 | 发现技能、阅读说明与案例 |
-| `skills/<技能名>/` | 取得某个技能的独立指令和运行资源 |
-| 你的业务项目 | 保存源稿、当前状态和实际成果，使用选中的技能 |
+## 1.3.0：每个阶段都对应最终交付
 
-总库中的专业能力按实际新增内容扩充；不预列尚不存在的技能或团队。
+适合接手已有项目、推进多阶段任务，或避免只完成局部工作就结束。单项简单任务直接使用对应专业技能。
+
+| 你遇到的问题 | 项目管家如何处理 | 你能看到什么 |
+| --- | --- | --- |
+| 旧记录写“完成”，实际交付仍不齐 | 核对目标版本、文件和验收依据 | 已完成、待验收、未开始与阻塞；缺口标为待核实，不猜百分比 |
+| 当前任务做完，最终目标仍未达到 | 分清最终目标、阶段目标和当前任务，各阶段对应必要验收项 | 目标确认单、阶段顺序、交付物与通过条件 |
+| 每次汇报后都要重新催促 | 继续已授权且依赖已满足的必要工作，失败后修复复验 | 实际产物、检查证据和剩余项 |
+| 目标或条件变化 | 方法可在授权内调整；明确改目标、暂停或取消按新指令处理 | 目标版本、确认依据、变更与恢复条件 |
+
+<p align="center"><a href="assets/v1.3.0/goal-board.zh-CN.svg"><picture><source media="(max-width: 600px)" srcset="assets/v1.3.0/goal-board.mobile.zh-CN.png"><img src="assets/v1.3.0/goal-board.zh-CN.png" alt="最终目标、阶段目标、当前任务对应必要验收项，记录目标版本和确认依据。" width="960"></picture></a></p>
+
+图为工作规则示意。最终目标可覆盖多个阶段，本次只授权一个阶段时，只交付并报告该阶段。已有确认且目标未变时直接沿用；新项目或实质变更先提交计划供用户确认。
+
+修复复验、按需分工、单一写入负责人是已有能力；本版把这些工作进一步绑定到最终目标。职责可由同一助手顺序承担，真实子助手取决于宿主能力与授权。Skill 不自带专业软件、模型账号或后台常驻执行器。
+
+<a id="start"></a>
+
+## 从一个明确任务开始
+
+调用方式不变：Codex 使用 `$project-manager`；Claude Code 使用 `/project-manager`；WorkBuddy 先导入并启用，再提出“使用项目管家（project-manager）”。名称出现在消息里不等于技能已加载。
+
+<a id="check"></a>
+
+### A · 先只读判断进度
+
+```text
+使用 $project-manager，只读核对当前项目实际进度与权威版本。
+区分最终目标、阶段目标和当前任务，列出完成证据、待验收、未开始及阻塞。
+恢复已有确认和授权；缺少确认时提交目标确认单和计划，等我确认。
+本轮不修改文件、不实际派工、不安装或发布。
+```
+
+应收到进度判断、目标与计划；只读阶段不应出现制作或安装结果。
+
+<a id="execute"></a>
+
+### B · 继续已经批准的工作
+
+```text
+使用 $project-manager，恢复已确认的最终目标、目标版本及授权范围。
+逐阶段对照最终交付与必要验收，继续依赖已满足的任务。
+进度询问先回复再继续；检查失败按原标准修复并复验，不自行降标。
+必要项通过且交付齐全后汇报；真实阻塞时保存证据和恢复条件。
+明确改目标、暂停或取消时遵从我的新指令，不超出已有授权。
+```
+
+[更多任务与续作指令](docs/usage.md) · [跨电脑交接边界](docs/portability.md)
 
 <a id="case"></a>
 
-## 实测展示：先看解决了什么
+## 新实测：从旧原型到可解压运行的报告工具
 
-在一次 VI 项目只读复核中，团队核对当前状态与实际文件，识别出旧待办与后续成功记录的冲突；发现规范样张和参考稿中的字体问题；并将一份报告的证据缺项补齐、独立回查关闭。设计原稿保持不变。
+**2026-11-17 · project-manager 1.3.0 · 本机 Windows/Codex · 合成离线项目。**一个真实执行助手接手带旧“完成”状态的 CSV 原型，识别新目标还缺 HTML、输入保护、说明和 ZIP。测试方模拟使用者确认 v2 目标后，助手串行制作、修复、复验并交接，未再派生员工。
 
-<p align="center"><a href="assets/overview/review-evidence.zh-CN.svg"><picture><source media="(max-width: 600px)" srcset="assets/overview/review-evidence.mobile.zh-CN.png"><img src="assets/overview/review-evidence.zh-CN.png" alt="VI 只读实测：3 名子助手、13 页 PDF 复核、81 份原文件保持不变，补证后独立回查" width="960"></picture></a></p>
+<p align="center"><a href="assets/v1.3.0/trial-evidence.zh-CN.svg"><picture><source media="(max-width: 600px)" srcset="assets/v1.3.0/trial-evidence.mobile.zh-CN.png"><img src="assets/v1.3.0/trial-evidence.zh-CN.png" alt="合成离线实测：确认前7文件不变；首次7失败1报错，修复后8/8通过；额外21条数据及4浏览器场景通过。" width="960"></picture></a></p>
 
-图为维护者根据 2026-11-05 本机 Windows/Codex 记录绘制的脱敏摘要，不是软件截图；未采集对照基线，原始客户资料未公开。
-
-[查看真实分工与回查过程](cases/vi-readonly-20261105/README.md) · [验证范围](docs/validation.md)
-
-## 接下来去哪里
-
-| 你想做什么 | 入口 |
+| 检查 | 记录结果 |
 | --- | --- |
-| 安装并确认技能可用 | [五步上手](docs/installation.md) |
-| 先检查项目，或执行已授权任务 | [单技能的两个开始入口](skills/project-manager/README.zh-CN.md#start) |
-| 继续工作、换电脑或处理缺口 | [使用指令](docs/usage.md) · [迁移](docs/portability.md) · [排查](docs/troubleshooting.md) |
+| 确认前只读 | 7 个初始文件哈希不变，新增文件 0 |
+| 固定验收与修复 | 首次 7 失败、1 报错；修复后 8/8 通过，记录绑定不同源码哈希 |
+| 最终交付 | ZIP 解压后的实际运行通过；必要交付齐全 |
+| 主助手额外复核 | 新增 21 条 BOM CSV，检查重复编号、顺序、特殊字符及错误输入保护 |
+| 浏览器复核 | 样例与额外报告各检查 1440 / 390 宽度，共 4 场景通过 |
 
-## 适用范围与许可
+图和数字是维护者依据本地记录整理的摘要，不是软件截图。目标确认由测试方模拟；无旧版或不用技能的对照，不量化效率提升，不保证长期持续执行。公开摘要不包含可重放全套实验的源代码与原始日志。
 
-技能需要能读取项目文件与指令的 AI 宿主。已实测范围是上述本机 Windows/Codex 只读协作；实际跨电脑、其他宿主与生产制作尚未验证。软件、账号及专业工具由目标环境提供。
+[完整方法、结果及脱敏证据](cases/goal-driven-trial-20261117/README.md) · [验证范围](docs/validation.md)
 
-采用 MIT 许可证，版权署名为 xmonk888-art。[MIT 与许可范围](LICENSE-STATUS.md) · [贡献指南](CONTRIBUTING.md) · [来源与致谢](ACKNOWLEDGEMENTS.md)
+## 历史案例与未验证范围
+
+[2026-11-05 VI 只读复核](cases/vi-readonly-20261105/README.md)使用更名前的 **task-orchestrator 1.0.0**：3 名子助手、13 页 PDF、81 份原文件不变。保留原归属，不用于证明 1.3.0 新功能。
+
+尚未验证真实客户生产项目、1.3.0 多员工并行、长期运行、其他宿主、跨电脑及会话关闭后的自动恢复。桌面技能列表刷新和重启后的显示也未实测。未来任务仍按自身验收条件检查。
+
+<a id="skills"></a>
+
+## 技能、项目与许可
+
+取得单个技能即可；业务源稿、状态和交付物保留在实际项目中。运行资源为 `SKILL.md`、`agents/openai.yaml`、`references/records-and-handoff.md`，分发保留 `LICENSE`。图和案例是阅读资料。
+
+当前版本 **1.3.0**。MIT · Copyright (c) 2026 xmonk888-art。
+
+[项目管家详情](skills/project-manager/README.zh-CN.md) · [版本记录](CHANGELOG.md) · [许可范围](LICENSE-STATUS.md) · [贡献](CONTRIBUTING.md) · [致谢](ACKNOWLEDGEMENTS.md)
